@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/simple.css">
+		<link rel="stylesheet" href="temp-style.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="myassets/baground-reveal.png">
+					<div class="bloc-content">
+						<h2>Langage de programmation </h2>
+						<div class="table-parent">
+							<div class="table-focus">
+								<div class="out-border-1">
+									<p class="step-qqc">Quoi ?</p>
+
+								</div>
+							</div>
+
+							<div class="table-items">
+								
+								<div class="items item-1">
+									
+									<div class="txt-content" >
+										<strong class="items-icons">
+											<p>1</p>
+											
+										</strong>
+										<p class="parag">
+											Un langage informatique destiné à...
+											<br>										
+										</p>
+									</div>
+								</div>
+								<div class="items item-2">
+									<div class="txt-content marg-left" >
+										<strong class="items-icons" id="items-icons-2" style="position: absolute; left: 50px;">
+											<p>2</p>
+											
+										</strong>
+										<p class="parag">
+											...formuler des algorithmes et... 
+										</p>
+									</div>
+								</div>
+								<div class="items item-3">
+									<div class="txt-content">
+										<strong class="items-icons">
+											<p>3</p>
+											
+										</strong>
+										<p class="parag">
+											...produire des programmes informatiques qui les appliquent.
+										</p>
+									</div>
+								</div>
+								
+	
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</section>
+				<section>
+					<p data-fragment-index="1">Ce paragraphe apparaît en premier.</p>
+					<p data-fragment-index="2" data-fragment-state="hidden">Ce paragraphe apparaît en deuxième et cache le premier.</p>
+					<p data-fragment-index="3">Ce paragraphe apparaît en troisième et remplace le deuxième.</p>
+				  </section>
+				<section>Slide 2</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

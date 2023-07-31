@@ -1,0 +1,7 @@
+Le texte parle de deux formats d'ordre des octets (ou byte en anglais) : big-endian et little-endian. Le format big-endian est principalement utilisé pour les réseaux (par exemple, les adresses IP sont transmises en big-endian), tandis que le format little-endian est utilisé principalement par les ordinateurs avec des microprocesseurs. 
+
+Le texte donne un exemple de conversion d'un entier en hexadécimal dans les deux formats. 
+
+Ensuite, le texte demande d'écrire une fonction qui inverse l'ordre des octets d'un entier donné. La fonction prendra en argument un entier n et la taille en bits de l'entier. La taille en bits doit être une puissance de 2 supérieure ou égale à 8. La fonction doit renvoyer une valeur None si l'entier est négatif, si la taille spécifiée n'est pas une puissance de 2 qui est supérieure ou égale à 8, ou si l'entier est plus grand que la taille spécifiée peut gérer. Dans ce kata, on suppose que tous les entiers sont non signés (non négatifs) et que tous les arguments d'entrée sont des entiers (pas de nombres décimaux, de chaînes de caractères, de valeurs None/nil, etc.). Il faut tenir compte du remplissage des octets nuls (00).
+
+Enfin, le texte donne un indice en disant que les opérateurs bit à bit sont très utiles pour résoudre ce problème.

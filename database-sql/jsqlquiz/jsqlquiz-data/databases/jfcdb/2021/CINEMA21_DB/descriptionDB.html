@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Description de la BD CINEMA21</title>
+        <link rel="stylesheet" type="text/css" href="descriptionDB.css">
+        <meta charset="UTF-8">
+        <meta name="id" content="jfcdb.2021.CINEMA21_DB">
+        <meta name="name" content="CINEMA21">
+        <meta name="versionXML" content="1.0">
+        <meta name="date" content="30/08/2021">
+        <meta name="author" content="Jean-Fran&ccedil;ois Condotta">
+    </head>
+    <body>
+        <div id="principal">
+            <div id="titreDB">La base de donn&eacute;es CINEMA21</div>
+            <div id="descriptionDB1">
+La base de donn&eacute;es CINEMA21 contient diff&eacute;rentes tables permettant de stocker des informations sur des films.
+Chaque film peut appartenir &agrave; aucun, un ou plusieurs genres. 
+Un film peut &eacute;galement &ecirc;tre associ&eacute; &agrave; aucun, un ou plusieurs r&eacute;alisateurs.
+Les diff&eacute;rentes tables constituant la base de donn&eacute;es CINEMA21 sont d&eacute;crites dans la suite.
+</div>
+            <div class="classTable">
+                <div class="classSchemeTable">FILM(<strong><b>id_film</b></strong>,titre,annee_sortie,duree)</div>
+                <div class="classDescriptionTable">
+ La table FILM permet de stocker les diff&eacute;rentes informations concernant les films. L'attribut id_film est de type entier (INT) et permet d'identifier de mani&egrave;re unique chaque film (ce seul attribut constitue la cl&eacute; primaire de la table FILM). L'attribut titre est de type cha&icirc;ne de caract&egrave;res (VARCHAR(100)) et correspond au titre du film. 
+ Ce titre ne peut pas prendre la valeur NULL et a une taille d'au moins un caract&egrave;re.
+L'attribut annee_sortie est un nombre entier (INT) strictement sup&eacute;rieur &agrave; 1890 et correspond &agrave; l'ann&eacute;e de sortie du film. L'attribut duree est un nombre entier (INT) compris strictement entre 0 et 1000. Cet attribut correspond &agrave; la dur&eacute;e du film en minutes. Les attributs annee_sortie et duree ne peuvent pas prendre la valeur NULL.
+ </div>
+            </div>
+            <div class="classTable">
+                <div class="classSchemeTable">GENRE(<strong><b>id_genre</b></strong>,nom_genre)</div>
+                <div class="classDescriptionTable">
+La table GENRE permet de stocker les genres des films. 
+L'attribut id_genre est de type entier (INT) et permet d'identifier un genre.
+ L'attribut nom_genre est de type cha&icirc;ne de caract&egrave;res (VARCHAR(100)) et correspond &agrave; un nom de genre. Il ne peut &ecirc;tre NULL.
+ Ce nom a forc&eacute;ment au moins un caract&egrave;re. Deux genres diff&eacute;rents ont forc&eacute;ment deux noms diff&eacute;rents.
+  La cl&eacute; primaire de la table GENRE est constitu&eacute;e du seul attribut id_genre.
+</div>
+            </div>
+            <div class="classTable">
+                <div class="classSchemeTable">APPARTIENT(<strong><b><i>id_film</i></b></strong>,<strong><b><i>id_genre</i></b></strong>)</div>
+                <div class="classDescriptionTable">
+La table APPARTIENT permet de stocker des informations concernant l'appartenance des films &agrave; certains genres.
+Un film peut appartenir &agrave; aucun, un ou plusieurs genres.
+L'attribut id_film est de type entier (INT) et permet d'identifier un film.
+Cet attribut ne peut pas prendre comme valeur la valeur NULL et r&eacute;f&eacute;rence l'attribut id_film de la table FILM.
+L'attribut id_genre est de type entier (INT) et permet d'identifier un genre.
+Cet attribut ne peut pas prendre comme valeur la valeur NULL et r&eacute;f&eacute;rence l'attribut id_genre de la table GENRE.
+La cl&eacute; primaire de la table APPARTIENT est constitu&eacute;e des attributs id_film et id_genre.
+</div>
+            </div>
+            <div class="classTable">
+                <div class="classSchemeTable">REALISATEUR(<strong><b>id_real</b></strong>,prenom,nom,annee_n,ville_n,pays_n)</div>
+                <div class="classDescriptionTable">
+La table REALISATEUR permet de stocker diff&eacute;rentes informations concernant des r&eacute;alisateurs. L'attribut id_real est de type entier (INT) et permet d'identifier de mani&egrave;re unique chaque r&eacute;alisateur (ce seul attribut constitue la cl&eacute; primaire de la table REALISATEUR). Les attributs prenom, nom, ville_n, pays_n sont de type cha&icirc;ne de caract&egrave;res (VARCHAR(100)) et correspondent respectivement au nom, au pr&eacute;nom, &agrave; la ville de naissance et au pays de naissance du r&eacute;alisateur. Les attributs ville_n et pays_n peuvent avoir la valeur NULL tandis que les attributs nom et prenom ne peuvent pas prendre la valeur NULL. Deux r&eacute;alisateurs diff&eacute;rents ne peuvent avoir &agrave; la fois m&ecirc;me nom et m&ecirc;me pr&eacute;nom. L'attribut annee_n est un entier (INT) strictement sup&eacute;rieur &agrave; 1900 correspondant &agrave; la date de naissance du r&eacute;alisateur. Cet attribut peut avoir la valeur NULL.
+</div>
+            </div>
+            <div class="classTable">
+                <div class="classSchemeTable">REALISE(<strong><b><i>id_film</i></b></strong>,<strong><b><i>id_real</i></b></strong>)</div>
+                <div class="classDescriptionTable">
+La table REALISE permet d'associer des r&eacute;alisateurs avec certains de leurs films.
+L'attribut id_film est de type entier (INT) et permet d'identifier un film auquel on associe un r&eacute;alisateur.
+Cet attribut ne peut pas prendre comme valeur la valeur NULL et r&eacute;f&eacute;rence l'attribut id_film de la table FILM.
+L'attribut id_real est de type entier (INT) et permet d'identifier un r&eacute;alisateur auquel on associe un film.
+Cet attribut ne peut pas prendre la valeur NULL et r&eacute;f&eacute;rence l'attribut id_real de la table REALISATEUR.
+La cl&eacute; primaire de la table REALISE est constitu&eacute;e des attributs
+ id_film et id_real.
+</div>
+            </div>
+            <div id="descriptionDB2">
+Dans la base de donn&eacute;es CINEMA21, un film donn&eacute; peut ne pas &ecirc;tre associ&eacute; &agrave; des genres et &agrave; des r&eacute;alisateurs.
+Un r&eacute;alisateur donn&eacute; peut ne pas &ecirc;tre associ&eacute; &agrave; un film. Un genre donn&eacute; peut ne pas &ecirc;tre associ&eacute; &agrave; un film.
+Un film peut avoir plusieurs r&eacute;alisateurs.
+</div>
+            <div id="infos">
+id : jfcdb.2021.CINEMA21_DB - 
+name : CINEMA21 - 
+version xml : 1.0 -
+version xslt : 1.0 -
+    date: 30/08/2021 - 
+    author : Jean-Fran&ccedil;ois Condotta -
+    JSQlQUIZ
+</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+Ce défi consiste à créer une requête simple pour afficher chaque clan unique avec leur nombre total de points et classé par leur nombre total de points. Le schéma de table people comprend les colonnes suivantes : name, points et clan. 
+
+La requête doit classer chaque clan par leur nombre total de points et retourner chaque clan unique. Si le nom du clan est vide, il doit être remplacé par [aucun clan spécifié]. La requête doit également calculer la somme des points totaux pour chaque clan et le nombre total de personnes dans ce clan.
+
+Note : Les données sont chargées à partir du leaderboard en direct, ce qui signifie que les valeurs peuvent changer et que le kata peut prendre du temps à récupérer les informations.
+
+Remarque : Votre solution doit utiliser uniquement SQL. Ruby est utilisé dans les cas de test pour effectuer les tests réels.

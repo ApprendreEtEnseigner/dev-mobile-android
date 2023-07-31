@@ -1,0 +1,867 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>BUT INFORMATIQUE -  R1.05 - QUIZ SQL 01</title>
+        <link rel="stylesheet" type="text/css" href="formQuiz.css">
+        <meta charset="UTF-8">
+        <meta name="id" content="jfcquiz.2021.BUT_INFO_R1_05.QUIZ_01">
+        <meta name="name" content="BUT INFORMATIQUE -  R1.05 - QUIZ SQL 01">
+        <meta name="versionXML" content="1.0">
+        <meta name="date" content="11/09/2021">
+        <meta name="author" content="Jean-Fran&ccedil;ois Condotta">
+        <meta name="nameDB" content="CINEMA21">
+        <meta name="refIdDB" content="jfcdb.2021.CINEMA21_DB">
+        <meta name="type" content="interrogation">
+        <script src="formQuiz.js"></script>
+    </head>
+    <body>
+        <div id="principal">
+            <div id="logos">
+                <div id="logoJSQlQUIZ">
+                    <svg width="215" height="57" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg">
+                        <text font-weight="bold" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="45" id="svg_9" y="43.71876" x="107.09377" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#ff7f00">JSQlQUIZ</text>
+                        <text font-weight="bold" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="45" id="svg_10" y="43.72851" x="69.40625" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#ff0000">SQl</text>
+                    </svg>
+                </div>
+                <div id="logoInstitution">
+                    <svg width="185" height="57">
+                        <text fill="#ff7f00" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="40.40625" y="44.72851" id="svg_10" font-size="45" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" font-weight="bold">IUT</text>
+                        <text fill="#ff0000" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="127.5" y="44.50195" id="svg_1" font-size="45" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" font-weight="bold">Lens</text>
+                    </svg>
+                </div>
+            </div>
+            <div id="idUser"></div>
+            <div id="titreQuiz">BUT INFORMATIQUE -  R1.05 - QUIZ SQL 01</div>
+            <div id="descriptionQuiz1">
+Ce quiz permet de vous exercer &agrave; l'&eacute;laboration de requ&ecirc;tes SQL simples sur la base de donn&eacute;es CINEMA21. Pour chacune des questions, une requ&ecirc;te SQL est demand&eacute;e afin d'apporter certaines informations. Pour ce quiz, toutes les requ&ecirc;tes demand&eacute;es portent sur une seule table de la base de donn&eacute;es CINEMA21. Chacune d'elles est  constitu&eacute;e des clauses SELECT et FROM et &eacute;ventuellement des clauses WHERE et ORDER BY. Chaque requ&ecirc;te doit &ecirc;tre &eacute;crite de mani&egrave;re minimale, par exemple, une clause WHERE non utile dans une requ&ecirc;te donn&eacute;e ne doit pas &ecirc;tre pr&eacute;sente dans cette requ&ecirc;te. Comme autre exemple, la suppression de doublons dans une requ&ecirc;te donn&eacute;e ne doit pas &ecirc;tre pr&eacute;sente si elle est inutile. Les requ&ecirc;tes donn&eacute;es doivent &ecirc;tre valides quel que puissent &ecirc;tre les contenus des diff&eacute;rentes tables. Vos requ&ecirc;tes doivent &ecirc;tre &eacute;crites de mani&egrave;re lisible (chaque clause sera plac&eacute;e sur une nouvelle ligne). Rappelons que le sch&eacute;ma de
+la base de donn&eacute;es CINEMA21 est le suivant : 
+</div>
+            	
+<div id="schemeTables">
+    <div class="classSchemeTable">FILM(<strong><b>id_film</b></strong>,titre,annee_sortie,duree)</div>
+    <div class="classSchemeTable">GENRE(<strong><b>id_genre</b></strong>,nom_genre)</div>
+    <div class="classSchemeTable">APPARTIENT(<strong><b><i>id_film</i></b></strong>,<strong><b><i>id_genre</i></b></strong>)</div>
+    <div class="classSchemeTable">REALISATEUR(<strong><b>id_real</b></strong>,prenom,nom,annee_n,ville_n,pays_n)</div>
+    <div class="classSchemeTable">REALISE(<strong><b><i>id_film</i></b></strong>,<strong><b><i>id_real</i></b></strong>)</div>
+</div>
+
+
+            <div class="classBattery" id="idBattery_1" xmlns="">
+                <div class="classTitreBattery">S&eacute;rie 1</div>
+                <div class="classDescriptionBattery">
+	Dans cette s&eacute;rie, toutes les requ&ecirc;tes demand&eacute;es contiennent uniquement les trois clauses SELECT/FROM/ORDER BY.
+	</div>
+                <div class="classQuestion" id="idQuestion_1_1">
+                    <div class="classTitreQuestion">Question 1</div>
+                    <div class="classStatementQuestion" id="idStatement_1_1">
+                        <div class="classQuestQ">
+                            <b>Informations demand&eacute;es : </b>
+		Quels sont le nom et l'identifiant de chaque genre de la base de donn&eacute;es ?
+	
+                        </div>
+                        <div class="classDisplayQ">
+                            <b>Affichage :</b>
+		L'affichage devra &ecirc;tre effectu&eacute; par ordre alphab&eacute;tique des noms des genres.
+	
+                        </div>
+                        <div class="classUserAnswer">
+                            <div id="reqSQL_1_1">
+                                <div class="classTitreSQL">Requ&ecirc;te SQL</div>
+                                <div class="classImgValidation">
+                                    <img class="classImgResultatValidation" id="idImg_0_1_1" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgResultatValidation" id="idImg_1_1_1" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgResultatValidation" id="idImg_2_1_1" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgResultatValidation" id="idImg_3_1_1" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;">
+                                </div>
+                                <textarea class="classInputSQL" id="inputSQL_1_1" cols="50" rows="3" oninput="changementSaisie(0,'1_1')"></textarea>
+                                <div class="classMaskToPrint">
+                                    <div class="classSecondPart" id="idSecondPart_1_1">
+                                        <div>
+                                            <button class="classBoutonEvaluer" id="boutonEvaluer_1_1" onclick="treatSQL_SELECT('1_1')" type="button">&Eacute;valuer</button>
+                                        </div>
+                                        <div class="classErreurSQL">
+                                            <div class="classTitreMessage">Message</div>
+                                            <div class="classErrorSQL" id="errorSQL_1_1"></div>
+                                        </div>
+                                        <div class="classSortieSQL">
+                                            <div class="classTitreSortie">&Eacute;valuation</div>
+                                            <div class="classOutputSQL" id="outputSQL_1_1"></div>
+                                        </div>
+                                    </div>
+                                    <div class="classHideSecondPart">
+                                        <img class="classImgHide" id="idImgHide_1_1" onclick="hideSecondPart('idSecondPart_1_1','idImgHide_1_1','idImgShow_1_1')" src="hide.png" alt="Cacher"><img class="classImgShow" id="idImgShow_1_1" onclick="showSecondPart('idSecondPart_1_1','idImgShow_1_1','idImgHide_1_1')" src="show.png" alt="Show" style="display:none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="classQuestion" id="idQuestion_1_2">
+                    <div class="classTitreQuestion">Question 2</div>
+                    <div class="classStatementQuestion" id="idStatement_1_2">
+                        <div class="classQuestQ">
+                            <b>Informations demand&eacute;es : </b>
+		Quels sont l'identifiant et le nom de chaque genre de la base de donn&eacute;es ?
+	
+                        </div>
+                        <div class="classDisplayQ">
+                            <b>Affichage :</b>
+		L'affichage devra &ecirc;tre effectu&eacute; par ordre d&eacute;croissant des identifiants des genres.
+	
+                        </div>
+                        <div class="classConstraintQ">
+                            <b>Contraintes : </b>
+		La clause SELECT de la requ&ecirc;te devra contenir le s&eacute;lecteur &eacute;toile (*).
+	
+                        </div>
+                        <div class="classUserAnswer">
+                            <div id="reqSQL_1_2">
+                                <div class="classTitreSQL">Requ&ecirc;te SQL</div>
+                                <div class="classImgValidation">
+                                    <img class="classImgResultatValidation" id="idImg_0_1_2" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgResultatValidation" id="idImg_1_1_2" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgResultatValidation" id="idImg_2_1_2" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgResultatValidation" id="idImg_3_1_2" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;">
+                                </div>
+                                <textarea class="classInputSQL" id="inputSQL_1_2" cols="50" rows="3" oninput="changementSaisie(0,'1_2')"></textarea>
+                                <div class="classMaskToPrint">
+                                    <div class="classSecondPart" id="idSecondPart_1_2">
+                                        <div>
+                                            <button class="classBoutonEvaluer" id="boutonEvaluer_1_2" onclick="treatSQL_SELECT('1_2')" type="button">&Eacute;valuer</button>
+                                        </div>
+                                        <div class="classErreurSQL">
+                                            <div class="classTitreMessage">Message</div>
+                                            <div class="classErrorSQL" id="errorSQL_1_2"></div>
+                                        </div>
+                                        <div class="classSortieSQL">
+                                            <div class="classTitreSortie">&Eacute;valuation</div>
+                                            <div class="classOutputSQL" id="outputSQL_1_2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="classHideSecondPart">
+                                        <img class="classImgHide" id="idImgHide_1_2" onclick="hideSecondPart('idSecondPart_1_2','idImgHide_1_2','idImgShow_1_2')" src="hide.png" alt="Cacher"><img class="classImgShow" id="idImgShow_1_2" onclick="showSecondPart('idSecondPart_1_2','idImgShow_1_2','idImgHide_1_2')" src="show.png" alt="Show" style="display:none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="classQuestion" id="idQuestion_1_3">
+                    <div class="classTitreQuestion">Question 3</div>
+                    <div class="classStatementQuestion" id="idStatement_1_3">
+                        <div class="classQuestQ">
+                            <b>Informations demand&eacute;es : </b>
+		Quels sont l'identifiant et la dur&eacute;e de chaque film ?
+	
+                        </div>
+                        <div class="classDisplayQ">
+                            <b>Affichage :</b>
+		L'affichage devra &ecirc;tre effectu&eacute; par ordre d&eacute;croissant des dur&eacute;es des films et par ordre d&eacute;croissant des identifiants des films en cas d'&eacute;galit&eacute; des dur&eacute;es.
+	
+                        </div>
+                        <div class="classUserAnswer">
+                            <div id="reqSQL_1_3">
+                                <div class="classTitreSQL">Requ&ecirc;te SQL</div>
+                                <div class="classImgValidation">
+                                    <img class="classImgResultatValidation" id="idImg_0_1_3" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgResultatValidation" id="idImg_1_1_3" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgResultatValidation" id="idImg_2_1_3" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgResultatValidation" id="idImg_3_1_3" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;">
+                                </div>
+                                <textarea class="classInputSQL" id="inputSQL_1_3" cols="50" rows="3" oninput="changementSaisie(0,'1_3')"></textarea>
+                                <div class="classMaskToPrint">
+                                    <div class="classSecondPart" id="idSecondPart_1_3">
+                                        <div>
+                                            <button class="classBoutonEvaluer" id="boutonEvaluer_1_3" onclick="treatSQL_SELECT('1_3')" type="button">&Eacute;valuer</button>
+                                        </div>
+                                        <div class="classErreurSQL">
+                                            <div class="classTitreMessage">Message</div>
+                                            <div class="classErrorSQL" id="errorSQL_1_3"></div>
+                                        </div>
+                                        <div class="classSortieSQL">
+                                            <div class="classTitreSortie">&Eacute;valuation</div>
+                                            <div class="classOutputSQL" id="outputSQL_1_3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="classHideSecondPart">
+                                        <img class="classImgHide" id="idImgHide_1_3" onclick="hideSecondPart('idSecondPart_1_3','idImgHide_1_3','idImgShow_1_3')" src="hide.png" alt="Cacher"><img class="classImgShow" id="idImgShow_1_3" onclick="showSecondPart('idSecondPart_1_3','idImgShow_1_3','idImgHide_1_3')" src="show.png" alt="Show" style="display:none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="classQuestion" id="idQuestion_1_4">
+                    <div class="classTitreQuestion">Question 4</div>
+                    <div class="classStatementQuestion" id="idStatement_1_4">
+                        <div class="classQuestQ">
+                            <b>Informations demand&eacute;es : </b>
+		Quels sont pour chaque r&eacute;alisateur son identifiant, son pr&eacute;nom et son nom ?
+	
+                        </div>
+                        <div class="classDisplayQ">
+                            <b>Affichage :</b>
+		L'affichage devra &ecirc;tre effectu&eacute; par ordre d&eacute;croissant des identifiants des r&eacute;alisateurs. La colonne correspondant aux pr&eacute;noms des r&eacute;alisateurs devra &ecirc;tre renomm&eacute;e par "PRENOM_REAL" tandis que la colonne correspondant aux noms des r&eacute;alisateurs devra &ecirc;tre renomm&eacute;e par "NOM_REAL".
+	
+                        </div>
+                        <div class="classUserAnswer">
+                            <div id="reqSQL_1_4">
+                                <div class="classTitreSQL">Requ&ecirc;te SQL</div>
+                                <div class="classImgValidation">
+                                    <img class="classImgResultatValidation" id="idImg_0_1_4" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgResultatValidation" id="idImg_1_1_4" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgResultatValidation" id="idImg_2_1_4" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgResultatValidation" id="idImg_3_1_4" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;">
+                                </div>
+                                <textarea class="classInputSQL" id="inputSQL_1_4" cols="50" rows="3" oninput="changementSaisie(0,'1_4')"></textarea>
+                                <div class="classMaskToPrint">
+                                    <div class="classSecondPart" id="idSecondPart_1_4">
+                                        <div>
+                                            <button class="classBoutonEvaluer" id="boutonEvaluer_1_4" onclick="treatSQL_SELECT('1_4')" type="button">&Eacute;valuer</button>
+                                        </div>
+                                        <div class="classErreurSQL">
+                                            <div class="classTitreMessage">Message</div>
+                                            <div class="classErrorSQL" id="errorSQL_1_4"></div>
+                                        </div>
+                                        <div class="classSortieSQL">
+                                            <div class="classTitreSortie">&Eacute;valuation</div>
+                                            <div class="classOutputSQL" id="outputSQL_1_4"></div>
+                                        </div>
+                                    </div>
+                                    <div class="classHideSecondPart">
+                                        <img class="classImgHide" id="idImgHide_1_4" onclick="hideSecondPart('idSecondPart_1_4','idImgHide_1_4','idImgShow_1_4')" src="hide.png" alt="Cacher"><img class="classImgShow" id="idImgShow_1_4" onclick="showSecondPart('idSecondPart_1_4','idImgShow_1_4','idImgHide_1_4')" src="show.png" alt="Show" style="display:none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="classBattery" id="idBattery_2">
+                <div class="classTitreBattery">S&eacute;rie 2</div>
+                <div class="classDescriptionBattery">
+	Dans cette s&eacute;rie, toutes les requ&ecirc;tes demand&eacute;es contiennent uniquement les trois clauses SELECT/FROM/ORDER BY.
+	</div>
+                <div class="classQuestion" id="idQuestion_2_1">
+                    <div class="classTitreQuestion">Question 1</div>
+                    <div class="classStatementQuestion" id="idStatement_2_1">
+                        <div class="classQuestQ">
+                            <b>Informations demand&eacute;es : </b>
+		Quels sont les diff&eacute;rentes dur&eacute;es des films ?
+	
+                        </div>
+                        <div class="classDisplayQ">
+                            <b>Affichage :</b>
+		L'affichage devra &ecirc;tre effectu&eacute; par ordre croissant des dur&eacute;es.
+	
+                        </div>
+                        <div class="classUserAnswer">
+                            <div id="reqSQL_2_1">
+                                <div class="classTitreSQL">Requ&ecirc;te SQL</div>
+                                <div class="classImgValidation">
+                                    <img class="classImgResultatValidation" id="idImg_0_2_1" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgResultatValidation" id="idImg_1_2_1" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgResultatValidation" id="idImg_2_2_1" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgResultatValidation" id="idImg_3_2_1" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;">
+                                </div>
+                                <textarea class="classInputSQL" id="inputSQL_2_1" cols="50" rows="3" oninput="changementSaisie(0,'2_1')"></textarea>
+                                <div class="classMaskToPrint">
+                                    <div class="classSecondPart" id="idSecondPart_2_1">
+                                        <div>
+                                            <button class="classBoutonEvaluer" id="boutonEvaluer_2_1" onclick="treatSQL_SELECT('2_1')" type="button">&Eacute;valuer</button>
+                                        </div>
+                                        <div class="classErreurSQL">
+                                            <div class="classTitreMessage">Message</div>
+                                            <div class="classErrorSQL" id="errorSQL_2_1"></div>
+                                        </div>
+                                        <div class="classSortieSQL">
+                                            <div class="classTitreSortie">&Eacute;valuation</div>
+                                            <div class="classOutputSQL" id="outputSQL_2_1"></div>
+                                        </div>
+                                    </div>
+                                    <div class="classHideSecondPart">
+                                        <img class="classImgHide" id="idImgHide_2_1" onclick="hideSecondPart('idSecondPart_2_1','idImgHide_2_1','idImgShow_2_1')" src="hide.png" alt="Cacher"><img class="classImgShow" id="idImgShow_2_1" onclick="showSecondPart('idSecondPart_2_1','idImgShow_2_1','idImgHide_2_1')" src="show.png" alt="Show" style="display:none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="classQuestion" id="idQuestion_2_2">
+                    <div class="classTitreQuestion">Question 2</div>
+                    <div class="classStatementQuestion" id="idStatement_2_2">
+                        <div class="classQuestQ">
+                            <b>Informations demand&eacute;es : </b>
+		Quels sont les diff&eacute;rents noms des genres de la base de donn&eacute;es ?
+	
+                        </div>
+                        <div class="classDisplayQ">
+                            <b>Affichage :</b>
+		L'affichage devra &ecirc;tre effectu&eacute; par ordre alphab&eacute;tique inverse des noms des genres.
+	
+                        </div>
+                        <div class="classUserAnswer">
+                            <div id="reqSQL_2_2">
+                                <div class="classTitreSQL">Requ&ecirc;te SQL</div>
+                                <div class="classImgValidation">
+                                    <img class="classImgResultatValidation" id="idImg_0_2_2" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgResultatValidation" id="idImg_1_2_2" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgResultatValidation" id="idImg_2_2_2" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgResultatValidation" id="idImg_3_2_2" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;">
+                                </div>
+                                <textarea class="classInputSQL" id="inputSQL_2_2" cols="50" rows="3" oninput="changementSaisie(0,'2_2')"></textarea>
+                                <div class="classMaskToPrint">
+                                    <div class="classSecondPart" id="idSecondPart_2_2">
+                                        <div>
+                                            <button class="classBoutonEvaluer" id="boutonEvaluer_2_2" onclick="treatSQL_SELECT('2_2')" type="button">&Eacute;valuer</button>
+                                        </div>
+                                        <div class="classErreurSQL">
+                                            <div class="classTitreMessage">Message</div>
+                                            <div class="classErrorSQL" id="errorSQL_2_2"></div>
+                                        </div>
+                                        <div class="classSortieSQL">
+                                            <div class="classTitreSortie">&Eacute;valuation</div>
+                                            <div class="classOutputSQL" id="outputSQL_2_2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="classHideSecondPart">
+                                        <img class="classImgHide" id="idImgHide_2_2" onclick="hideSecondPart('idSecondPart_2_2','idImgHide_2_2','idImgShow_2_2')" src="hide.png" alt="Cacher"><img class="classImgShow" id="idImgShow_2_2" onclick="showSecondPart('idSecondPart_2_2','idImgShow_2_2','idImgHide_2_2')" src="show.png" alt="Show" style="display:none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="classQuestion" id="idQuestion_2_3">
+                    <div class="classTitreQuestion">Question 3</div>
+                    <div class="classStatementQuestion" id="idStatement_2_3">
+                        <div class="classQuestQ">
+                            <b>Informations demand&eacute;es : </b>
+		Quels sont les diff&eacute;rents pays de naissance des r&eacute;alisateurs (la valeur NULL sera gard&eacute;e dans le r&eacute;sultat) ?
+	
+                        </div>
+                        <div class="classDisplayQ">
+                            <b>Affichage :</b>
+		L'affichage devra &ecirc;tre effectu&eacute; par ordre alphab&eacute;tique des pays de naissance.
+	
+                        </div>
+                        <div class="classUserAnswer">
+                            <div id="reqSQL_2_3">
+                                <div class="classTitreSQL">Requ&ecirc;te SQL</div>
+                                <div class="classImgValidation">
+                                    <img class="classImgResultatValidation" id="idImg_0_2_3" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgResultatValidation" id="idImg_1_2_3" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgResultatValidation" id="idImg_2_2_3" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgResultatValidation" id="idImg_3_2_3" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;">
+                                </div>
+                                <textarea class="classInputSQL" id="inputSQL_2_3" cols="50" rows="3" oninput="changementSaisie(0,'2_3')"></textarea>
+                                <div class="classMaskToPrint">
+                                    <div class="classSecondPart" id="idSecondPart_2_3">
+                                        <div>
+                                            <button class="classBoutonEvaluer" id="boutonEvaluer_2_3" onclick="treatSQL_SELECT('2_3')" type="button">&Eacute;valuer</button>
+                                        </div>
+                                        <div class="classErreurSQL">
+                                            <div class="classTitreMessage">Message</div>
+                                            <div class="classErrorSQL" id="errorSQL_2_3"></div>
+                                        </div>
+                                        <div class="classSortieSQL">
+                                            <div class="classTitreSortie">&Eacute;valuation</div>
+                                            <div class="classOutputSQL" id="outputSQL_2_3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="classHideSecondPart">
+                                        <img class="classImgHide" id="idImgHide_2_3" onclick="hideSecondPart('idSecondPart_2_3','idImgHide_2_3','idImgShow_2_3')" src="hide.png" alt="Cacher"><img class="classImgShow" id="idImgShow_2_3" onclick="showSecondPart('idSecondPart_2_3','idImgShow_2_3','idImgHide_2_3')" src="show.png" alt="Show" style="display:none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="classBattery" id="idBattery_3">
+                <div class="classTitreBattery">S&eacute;rie 3</div>
+                <div class="classDescriptionBattery">
+	Dans cette s&eacute;rie, toutes les requ&ecirc;tes demand&eacute;es contiennent les trois clauses SELECT/FROM/WHERE et &eacute;ventuellement la clause ORDER BY.
+	</div>
+                <div class="classQuestion" id="idQuestion_3_1">
+                    <div class="classTitreQuestion">Question 1</div>
+                    <div class="classStatementQuestion" id="idStatement_3_1">
+                        <div class="classQuestQ">
+                            <b>Informations demand&eacute;es : </b>
+		Quels sont le titre, l'ann&eacute;e de sortie et la duree du film identifi&eacute; par l'entier 80 ?
+	
+                        </div>
+                        <div class="classUserAnswer">
+                            <div id="reqSQL_3_1">
+                                <div class="classTitreSQL">Requ&ecirc;te SQL</div>
+                                <div class="classImgValidation">
+                                    <img class="classImgResultatValidation" id="idImg_0_3_1" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgResultatValidation" id="idImg_1_3_1" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgResultatValidation" id="idImg_2_3_1" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgResultatValidation" id="idImg_3_3_1" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;">
+                                </div>
+                                <textarea class="classInputSQL" id="inputSQL_3_1" cols="50" rows="3" oninput="changementSaisie(0,'3_1')"></textarea>
+                                <div class="classMaskToPrint">
+                                    <div class="classSecondPart" id="idSecondPart_3_1">
+                                        <div>
+                                            <button class="classBoutonEvaluer" id="boutonEvaluer_3_1" onclick="treatSQL_SELECT('3_1')" type="button">&Eacute;valuer</button>
+                                        </div>
+                                        <div class="classErreurSQL">
+                                            <div class="classTitreMessage">Message</div>
+                                            <div class="classErrorSQL" id="errorSQL_3_1"></div>
+                                        </div>
+                                        <div class="classSortieSQL">
+                                            <div class="classTitreSortie">&Eacute;valuation</div>
+                                            <div class="classOutputSQL" id="outputSQL_3_1"></div>
+                                        </div>
+                                    </div>
+                                    <div class="classHideSecondPart">
+                                        <img class="classImgHide" id="idImgHide_3_1" onclick="hideSecondPart('idSecondPart_3_1','idImgHide_3_1','idImgShow_3_1')" src="hide.png" alt="Cacher"><img class="classImgShow" id="idImgShow_3_1" onclick="showSecondPart('idSecondPart_3_1','idImgShow_3_1','idImgHide_3_1')" src="show.png" alt="Show" style="display:none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="classQuestion" id="idQuestion_3_2">
+                    <div class="classTitreQuestion">Question 2</div>
+                    <div class="classStatementQuestion" id="idStatement_3_2">
+                        <div class="classQuestQ">
+                            <b>Informations demand&eacute;es : </b>
+		Quel est l'identifiant du genre dont le nom est 'Romance' ?
+	
+                        </div>
+                        <div class="classUserAnswer">
+                            <div id="reqSQL_3_2">
+                                <div class="classTitreSQL">Requ&ecirc;te SQL</div>
+                                <div class="classImgValidation">
+                                    <img class="classImgResultatValidation" id="idImg_0_3_2" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgResultatValidation" id="idImg_1_3_2" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgResultatValidation" id="idImg_2_3_2" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgResultatValidation" id="idImg_3_3_2" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;">
+                                </div>
+                                <textarea class="classInputSQL" id="inputSQL_3_2" cols="50" rows="3" oninput="changementSaisie(0,'3_2')"></textarea>
+                                <div class="classMaskToPrint">
+                                    <div class="classSecondPart" id="idSecondPart_3_2">
+                                        <div>
+                                            <button class="classBoutonEvaluer" id="boutonEvaluer_3_2" onclick="treatSQL_SELECT('3_2')" type="button">&Eacute;valuer</button>
+                                        </div>
+                                        <div class="classErreurSQL">
+                                            <div class="classTitreMessage">Message</div>
+                                            <div class="classErrorSQL" id="errorSQL_3_2"></div>
+                                        </div>
+                                        <div class="classSortieSQL">
+                                            <div class="classTitreSortie">&Eacute;valuation</div>
+                                            <div class="classOutputSQL" id="outputSQL_3_2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="classHideSecondPart">
+                                        <img class="classImgHide" id="idImgHide_3_2" onclick="hideSecondPart('idSecondPart_3_2','idImgHide_3_2','idImgShow_3_2')" src="hide.png" alt="Cacher"><img class="classImgShow" id="idImgShow_3_2" onclick="showSecondPart('idSecondPart_3_2','idImgShow_3_2','idImgHide_3_2')" src="show.png" alt="Show" style="display:none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="classQuestion" id="idQuestion_3_3">
+                    <div class="classTitreQuestion">Question 3</div>
+                    <div class="classStatementQuestion" id="idStatement_3_3">
+                        <div class="classQuestQ">
+                            <b>Informations demand&eacute;es : </b>
+		Quels sont les noms et les identifiants des r&eacute;alisateurs identifi&eacute;es par un entier inf&eacute;rieur ou &eacute;gal &agrave; 10 ?
+	
+                        </div>
+                        <div class="classDisplayQ">
+                            <b>Affichage :</b>
+		L'affichage devra &ecirc;tre effectu&eacute; par ordre d&eacute;croissant des identifiants des r&eacute;alisateurs.
+		La colonne correspondant aux noms des r&eacute;alisateurs devra &ecirc;tre renomm&eacute;e par "nom_R" tandis que la colonne correspondant aux identifiants des r&eacute;alisateurs devra &ecirc;tre renomm&eacute;e par "id_R".
+	
+                        </div>
+                        <div class="classUserAnswer">
+                            <div id="reqSQL_3_3">
+                                <div class="classTitreSQL">Requ&ecirc;te SQL</div>
+                                <div class="classImgValidation">
+                                    <img class="classImgResultatValidation" id="idImg_0_3_3" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgResultatValidation" id="idImg_1_3_3" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgResultatValidation" id="idImg_2_3_3" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgResultatValidation" id="idImg_3_3_3" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;">
+                                </div>
+                                <textarea class="classInputSQL" id="inputSQL_3_3" cols="50" rows="4" oninput="changementSaisie(0,'3_3')"></textarea>
+                                <div class="classMaskToPrint">
+                                    <div class="classSecondPart" id="idSecondPart_3_3">
+                                        <div>
+                                            <button class="classBoutonEvaluer" id="boutonEvaluer_3_3" onclick="treatSQL_SELECT('3_3')" type="button">&Eacute;valuer</button>
+                                        </div>
+                                        <div class="classErreurSQL">
+                                            <div class="classTitreMessage">Message</div>
+                                            <div class="classErrorSQL" id="errorSQL_3_3"></div>
+                                        </div>
+                                        <div class="classSortieSQL">
+                                            <div class="classTitreSortie">&Eacute;valuation</div>
+                                            <div class="classOutputSQL" id="outputSQL_3_3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="classHideSecondPart">
+                                        <img class="classImgHide" id="idImgHide_3_3" onclick="hideSecondPart('idSecondPart_3_3','idImgHide_3_3','idImgShow_3_3')" src="hide.png" alt="Cacher"><img class="classImgShow" id="idImgShow_3_3" onclick="showSecondPart('idSecondPart_3_3','idImgShow_3_3','idImgHide_3_3')" src="show.png" alt="Show" style="display:none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="classQuestion" id="idQuestion_3_4">
+                    <div class="classTitreQuestion">Question 4</div>
+                    <div class="classStatementQuestion" id="idStatement_3_4">
+                        <div class="classQuestQ">
+                            <b>Informations demand&eacute;es : </b>
+		Quels sont les diff&eacute;rents identifiants des r&eacute;alisateurs ayant r&eacute;alis&eacute; un film identifi&eacute; par un entier strictement inf&eacute;rieur &agrave; 25 ?
+	
+                        </div>
+                        <div class="classDisplayQ">
+                            <b>Affichage :</b>
+		L'affichage devra &ecirc;tre effectu&eacute; par ordre d&eacute;croissant des identifiants des r&eacute;alisateurs.
+	
+                        </div>
+                        <div class="classUserAnswer">
+                            <div id="reqSQL_3_4">
+                                <div class="classTitreSQL">Requ&ecirc;te SQL</div>
+                                <div class="classImgValidation">
+                                    <img class="classImgResultatValidation" id="idImg_0_3_4" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgResultatValidation" id="idImg_1_3_4" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgResultatValidation" id="idImg_2_3_4" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgResultatValidation" id="idImg_3_3_4" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;">
+                                </div>
+                                <textarea class="classInputSQL" id="inputSQL_3_4" cols="50" rows="4" oninput="changementSaisie(0,'3_4')"></textarea>
+                                <div class="classMaskToPrint">
+                                    <div class="classSecondPart" id="idSecondPart_3_4">
+                                        <div>
+                                            <button class="classBoutonEvaluer" id="boutonEvaluer_3_4" onclick="treatSQL_SELECT('3_4')" type="button">&Eacute;valuer</button>
+                                        </div>
+                                        <div class="classErreurSQL">
+                                            <div class="classTitreMessage">Message</div>
+                                            <div class="classErrorSQL" id="errorSQL_3_4"></div>
+                                        </div>
+                                        <div class="classSortieSQL">
+                                            <div class="classTitreSortie">&Eacute;valuation</div>
+                                            <div class="classOutputSQL" id="outputSQL_3_4"></div>
+                                        </div>
+                                    </div>
+                                    <div class="classHideSecondPart">
+                                        <img class="classImgHide" id="idImgHide_3_4" onclick="hideSecondPart('idSecondPart_3_4','idImgHide_3_4','idImgShow_3_4')" src="hide.png" alt="Cacher"><img class="classImgShow" id="idImgShow_3_4" onclick="showSecondPart('idSecondPart_3_4','idImgShow_3_4','idImgHide_3_4')" src="show.png" alt="Show" style="display:none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="classBattery" id="idBattery_4">
+                <div class="classTitreBattery">S&eacute;rie 4</div>
+                <div class="classDescriptionBattery">
+	Dans cette s&eacute;rie, toutes les requ&ecirc;tes demand&eacute;es contiennent les quatre clauses SELECT/FROM/WHERE/ORDER BY.
+	</div>
+                <div class="classQuestion" id="idQuestion_4_1">
+                    <div class="classTitreQuestion">Question 1</div>
+                    <div class="classStatementQuestion" id="idStatement_4_1">
+                        <div class="classQuestQ">
+                            <b>Informations demand&eacute;es : </b>
+		Quels sont les identifiants et les noms des r&eacute;alisateurs dont on ne connait pas le pays de naissance ?
+	
+                        </div>
+                        <div class="classDisplayQ">
+                            <b>Affichage :</b>
+		L'affichage devra &ecirc;tre effectu&eacute; par ordre d&eacute;croissant des identifiants des r&eacute;alisateurs.
+	
+                        </div>
+                        <div class="classConstraintQ">
+                            <b>Contraintes : </b>
+		La requ&ecirc;te ne doit pas contenir d'op&eacute;rateur logique.
+	
+                        </div>
+                        <div class="classUserAnswer">
+                            <div id="reqSQL_4_1">
+                                <div class="classTitreSQL">Requ&ecirc;te SQL</div>
+                                <div class="classImgValidation">
+                                    <img class="classImgResultatValidation" id="idImg_0_4_1" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgResultatValidation" id="idImg_1_4_1" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgResultatValidation" id="idImg_2_4_1" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgResultatValidation" id="idImg_3_4_1" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;">
+                                </div>
+                                <textarea class="classInputSQL" id="inputSQL_4_1" cols="50" rows="4" oninput="changementSaisie(0,'4_1')"></textarea>
+                                <div class="classMaskToPrint">
+                                    <div class="classSecondPart" id="idSecondPart_4_1">
+                                        <div>
+                                            <button class="classBoutonEvaluer" id="boutonEvaluer_4_1" onclick="treatSQL_SELECT('4_1')" type="button">&Eacute;valuer</button>
+                                        </div>
+                                        <div class="classErreurSQL">
+                                            <div class="classTitreMessage">Message</div>
+                                            <div class="classErrorSQL" id="errorSQL_4_1"></div>
+                                        </div>
+                                        <div class="classSortieSQL">
+                                            <div class="classTitreSortie">&Eacute;valuation</div>
+                                            <div class="classOutputSQL" id="outputSQL_4_1"></div>
+                                        </div>
+                                    </div>
+                                    <div class="classHideSecondPart">
+                                        <img class="classImgHide" id="idImgHide_4_1" onclick="hideSecondPart('idSecondPart_4_1','idImgHide_4_1','idImgShow_4_1')" src="hide.png" alt="Cacher"><img class="classImgShow" id="idImgShow_4_1" onclick="showSecondPart('idSecondPart_4_1','idImgShow_4_1','idImgHide_4_1')" src="show.png" alt="Show" style="display:none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="classQuestion" id="idQuestion_4_2">
+                    <div class="classTitreQuestion">Question 2</div>
+                    <div class="classStatementQuestion" id="idStatement_4_2">
+                        <div class="classQuestQ">
+                            <b>Informations demand&eacute;es : </b>
+		Quels sont les identifiants et les noms des r&eacute;alisateurs dont on connait la ville de naissance ?
+	
+                        </div>
+                        <div class="classDisplayQ">
+                            <b>Affichage :</b>
+		L'affichage devra &ecirc;tre effectu&eacute; par ordre d&eacute;croissant des identifiants des r&eacute;alisateurs.
+	
+                        </div>
+                        <div class="classConstraintQ">
+                            <b>Contraintes : </b>
+		La requ&ecirc;te ne doit pas contenir d'op&eacute;rateur logique.
+	
+                        </div>
+                        <div class="classUserAnswer">
+                            <div id="reqSQL_4_2">
+                                <div class="classTitreSQL">Requ&ecirc;te SQL</div>
+                                <div class="classImgValidation">
+                                    <img class="classImgResultatValidation" id="idImg_0_4_2" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgResultatValidation" id="idImg_1_4_2" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgResultatValidation" id="idImg_2_4_2" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgResultatValidation" id="idImg_3_4_2" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;">
+                                </div>
+                                <textarea class="classInputSQL" id="inputSQL_4_2" cols="50" rows="4" oninput="changementSaisie(0,'4_2')"></textarea>
+                                <div class="classMaskToPrint">
+                                    <div class="classSecondPart" id="idSecondPart_4_2">
+                                        <div>
+                                            <button class="classBoutonEvaluer" id="boutonEvaluer_4_2" onclick="treatSQL_SELECT('4_2')" type="button">&Eacute;valuer</button>
+                                        </div>
+                                        <div class="classErreurSQL">
+                                            <div class="classTitreMessage">Message</div>
+                                            <div class="classErrorSQL" id="errorSQL_4_2"></div>
+                                        </div>
+                                        <div class="classSortieSQL">
+                                            <div class="classTitreSortie">&Eacute;valuation</div>
+                                            <div class="classOutputSQL" id="outputSQL_4_2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="classHideSecondPart">
+                                        <img class="classImgHide" id="idImgHide_4_2" onclick="hideSecondPart('idSecondPart_4_2','idImgHide_4_2','idImgShow_4_2')" src="hide.png" alt="Cacher"><img class="classImgShow" id="idImgShow_4_2" onclick="showSecondPart('idSecondPart_4_2','idImgShow_4_2','idImgHide_4_2')" src="show.png" alt="Show" style="display:none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="classBattery" id="idBattery_5">
+                <div class="classTitreBattery">S&eacute;rie 5</div>
+                <div class="classDescriptionBattery">
+	Dans cette s&eacute;rie, toutes les requ&ecirc;tes demand&eacute;es contiennent les quatre clauses SELECT/FROM/WHERE/ORDER BY.
+	</div>
+                <div class="classQuestion" id="idQuestion_5_1">
+                    <div class="classTitreQuestion">Question 1</div>
+                    <div class="classStatementQuestion" id="idStatement_5_1">
+                        <div class="classQuestQ">
+                            <b>Informations demand&eacute;es : </b>
+		Quels sont les titres et les identifiants des films dont l'identifiant est compris (au sens large) entre 10 et 20 ?
+	
+                        </div>
+                        <div class="classDisplayQ">
+                            <b>Affichage :</b>
+		L'affichage devra &ecirc;tre effectu&eacute; par ordre d&eacute;croissant des identifiants des films.
+	
+                        </div>
+                        <div class="classConstraintQ">
+                            <b>Contraintes : </b>
+		La requ&ecirc;te doit contenir un et un seul op&eacute;rateur logique.
+	
+                        </div>
+                        <div class="classUserAnswer">
+                            <div id="reqSQL_5_1">
+                                <div class="classTitreSQL">Requ&ecirc;te SQL</div>
+                                <div class="classImgValidation">
+                                    <img class="classImgResultatValidation" id="idImg_0_5_1" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgResultatValidation" id="idImg_1_5_1" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgResultatValidation" id="idImg_2_5_1" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgResultatValidation" id="idImg_3_5_1" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;">
+                                </div>
+                                <textarea class="classInputSQL" id="inputSQL_5_1" cols="50" rows="4" oninput="changementSaisie(0,'5_1')"></textarea>
+                                <div class="classMaskToPrint">
+                                    <div class="classSecondPart" id="idSecondPart_5_1">
+                                        <div>
+                                            <button class="classBoutonEvaluer" id="boutonEvaluer_5_1" onclick="treatSQL_SELECT('5_1')" type="button">&Eacute;valuer</button>
+                                        </div>
+                                        <div class="classErreurSQL">
+                                            <div class="classTitreMessage">Message</div>
+                                            <div class="classErrorSQL" id="errorSQL_5_1"></div>
+                                        </div>
+                                        <div class="classSortieSQL">
+                                            <div class="classTitreSortie">&Eacute;valuation</div>
+                                            <div class="classOutputSQL" id="outputSQL_5_1"></div>
+                                        </div>
+                                    </div>
+                                    <div class="classHideSecondPart">
+                                        <img class="classImgHide" id="idImgHide_5_1" onclick="hideSecondPart('idSecondPart_5_1','idImgHide_5_1','idImgShow_5_1')" src="hide.png" alt="Cacher"><img class="classImgShow" id="idImgShow_5_1" onclick="showSecondPart('idSecondPart_5_1','idImgShow_5_1','idImgHide_5_1')" src="show.png" alt="Show" style="display:none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="classQuestion" id="idQuestion_5_2">
+                    <div class="classTitreQuestion">Question 2</div>
+                    <div class="classStatementQuestion" id="idStatement_5_2">
+                        <div class="classQuestQ">
+                            <b>Informations demand&eacute;es : </b>
+		Quels sont les noms et les identifiants des r&eacute;alisateurs dont l'identifiant est strictement inf&eacute;rieur &agrave; 10 ou strictement sup&eacute;rieur &agrave; 60 ?
+	
+                        </div>
+                        <div class="classDisplayQ">
+                            <b>Affichage :</b>
+		L'affichage devra &ecirc;tre effectu&eacute; par ordre d&eacute;croissant des identifiants des r&eacute;alisateurs.
+	
+                        </div>
+                        <div class="classConstraintQ">
+                            <b>Contraintes : </b>
+		La requ&ecirc;te doit contenir un et un seul op&eacute;rateur logique.
+	
+                        </div>
+                        <div class="classUserAnswer">
+                            <div id="reqSQL_5_2">
+                                <div class="classTitreSQL">Requ&ecirc;te SQL</div>
+                                <div class="classImgValidation">
+                                    <img class="classImgResultatValidation" id="idImg_0_5_2" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgResultatValidation" id="idImg_1_5_2" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgResultatValidation" id="idImg_2_5_2" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgResultatValidation" id="idImg_3_5_2" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;">
+                                </div>
+                                <textarea class="classInputSQL" id="inputSQL_5_2" cols="50" rows="4" oninput="changementSaisie(0,'5_2')"></textarea>
+                                <div class="classMaskToPrint">
+                                    <div class="classSecondPart" id="idSecondPart_5_2">
+                                        <div>
+                                            <button class="classBoutonEvaluer" id="boutonEvaluer_5_2" onclick="treatSQL_SELECT('5_2')" type="button">&Eacute;valuer</button>
+                                        </div>
+                                        <div class="classErreurSQL">
+                                            <div class="classTitreMessage">Message</div>
+                                            <div class="classErrorSQL" id="errorSQL_5_2"></div>
+                                        </div>
+                                        <div class="classSortieSQL">
+                                            <div class="classTitreSortie">&Eacute;valuation</div>
+                                            <div class="classOutputSQL" id="outputSQL_5_2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="classHideSecondPart">
+                                        <img class="classImgHide" id="idImgHide_5_2" onclick="hideSecondPart('idSecondPart_5_2','idImgHide_5_2','idImgShow_5_2')" src="hide.png" alt="Cacher"><img class="classImgShow" id="idImgShow_5_2" onclick="showSecondPart('idSecondPart_5_2','idImgShow_5_2','idImgHide_5_2')" src="show.png" alt="Show" style="display:none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="classQuestion" id="idQuestion_5_3">
+                    <div class="classTitreQuestion">Question 3</div>
+                    <div class="classStatementQuestion" id="idStatement_5_3">
+                        <div class="classQuestQ">
+                            <b>Informations demand&eacute;es : </b>
+		Quels sont les identifiants et les noms des r&eacute;alisateurs dont on connait la ville de naissance ?
+	
+                        </div>
+                        <div class="classDisplayQ">
+                            <b>Affichage :</b>
+		L'affichage devra &ecirc;tre effectu&eacute; par ordre d&eacute;croissant des identifiants des r&eacute;alisateurs.
+	
+                        </div>
+                        <div class="classConstraintQ">
+                            <b>Contraintes : </b>
+		La requ&ecirc;te doit contenir un op&eacute;rateur logique.
+	
+                        </div>
+                        <div class="classUserAnswer">
+                            <div id="reqSQL_5_3">
+                                <div class="classTitreSQL">Requ&ecirc;te SQL</div>
+                                <div class="classImgValidation">
+                                    <img class="classImgResultatValidation" id="idImg_0_5_3" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgResultatValidation" id="idImg_1_5_3" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgResultatValidation" id="idImg_2_5_3" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgResultatValidation" id="idImg_3_5_3" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;">
+                                </div>
+                                <textarea class="classInputSQL" id="inputSQL_5_3" cols="50" rows="4" oninput="changementSaisie(0,'5_3')"></textarea>
+                                <div class="classMaskToPrint">
+                                    <div class="classSecondPart" id="idSecondPart_5_3">
+                                        <div>
+                                            <button class="classBoutonEvaluer" id="boutonEvaluer_5_3" onclick="treatSQL_SELECT('5_3')" type="button">&Eacute;valuer</button>
+                                        </div>
+                                        <div class="classErreurSQL">
+                                            <div class="classTitreMessage">Message</div>
+                                            <div class="classErrorSQL" id="errorSQL_5_3"></div>
+                                        </div>
+                                        <div class="classSortieSQL">
+                                            <div class="classTitreSortie">&Eacute;valuation</div>
+                                            <div class="classOutputSQL" id="outputSQL_5_3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="classHideSecondPart">
+                                        <img class="classImgHide" id="idImgHide_5_3" onclick="hideSecondPart('idSecondPart_5_3','idImgHide_5_3','idImgShow_5_3')" src="hide.png" alt="Cacher"><img class="classImgShow" id="idImgShow_5_3" onclick="showSecondPart('idSecondPart_5_3','idImgShow_5_3','idImgHide_5_3')" src="show.png" alt="Show" style="display:none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="divStatistiques">
+                <div id="titreStatistiques">Statistiques</div>
+                <div id="idUserStatistiques"></div>
+                <table>
+                    <tr>
+                        <th>S&eacute;rie</th><th>Question</th><th>Points question</th><th>Tentatives</th><th>&Eacute;tat</th><th>Points acquis</th>
+                    </tr>
+                    <tr>
+                        <td class="classTDStatNormal">S&eacute;rie 1</td><td class="classTDStatNormal">Question 1</td><td class="classTDStatNormal" id="idPointsQuestion_1_1">1</td><td class="classTDStatNormal" id="idTentatives_1_1">0</td><td class="classTDStatNormal" id="idEtat_1_1"><img class="classImgEtat" id="idEtat_0_1_1" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgEtat" id="idEtat_1_1_1" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgEtat" id="idEtat_2_1_1" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgEtat" id="idEtat_3_1_1" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;"></td><td class="classTDStatNormal" id="idPointsAcquis_1_1">0</td>
+                    </tr>
+                    <tr>
+                        <td class="classTDStatNormal">S&eacute;rie 1</td><td class="classTDStatNormal">Question 2</td><td class="classTDStatNormal" id="idPointsQuestion_1_2">1</td><td class="classTDStatNormal" id="idTentatives_1_2">0</td><td class="classTDStatNormal" id="idEtat_1_2"><img class="classImgEtat" id="idEtat_0_1_2" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgEtat" id="idEtat_1_1_2" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgEtat" id="idEtat_2_1_2" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgEtat" id="idEtat_3_1_2" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;"></td><td class="classTDStatNormal" id="idPointsAcquis_1_2">0</td>
+                    </tr>
+                    <tr>
+                        <td class="classTDStatNormal">S&eacute;rie 1</td><td class="classTDStatNormal">Question 3</td><td class="classTDStatNormal" id="idPointsQuestion_1_3">1</td><td class="classTDStatNormal" id="idTentatives_1_3">0</td><td class="classTDStatNormal" id="idEtat_1_3"><img class="classImgEtat" id="idEtat_0_1_3" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgEtat" id="idEtat_1_1_3" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgEtat" id="idEtat_2_1_3" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgEtat" id="idEtat_3_1_3" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;"></td><td class="classTDStatNormal" id="idPointsAcquis_1_3">0</td>
+                    </tr>
+                    <tr>
+                        <td class="classTDStatNormal">S&eacute;rie 1</td><td class="classTDStatNormal">Question 4</td><td class="classTDStatNormal" id="idPointsQuestion_1_4">1</td><td class="classTDStatNormal" id="idTentatives_1_4">0</td><td class="classTDStatNormal" id="idEtat_1_4"><img class="classImgEtat" id="idEtat_0_1_4" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgEtat" id="idEtat_1_1_4" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgEtat" id="idEtat_2_1_4" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgEtat" id="idEtat_3_1_4" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;"></td><td class="classTDStatNormal" id="idPointsAcquis_1_4">0</td>
+                    </tr>
+                    <tr>
+                        <td class="classTDStatNormal">S&eacute;rie 2</td><td class="classTDStatNormal">Question 1</td><td class="classTDStatNormal" id="idPointsQuestion_2_1">1</td><td class="classTDStatNormal" id="idTentatives_2_1">0</td><td class="classTDStatNormal" id="idEtat_2_1"><img class="classImgEtat" id="idEtat_0_2_1" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgEtat" id="idEtat_1_2_1" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgEtat" id="idEtat_2_2_1" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgEtat" id="idEtat_3_2_1" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;"></td><td class="classTDStatNormal" id="idPointsAcquis_2_1">0</td>
+                    </tr>
+                    <tr>
+                        <td class="classTDStatNormal">S&eacute;rie 2</td><td class="classTDStatNormal">Question 2</td><td class="classTDStatNormal" id="idPointsQuestion_2_2">1</td><td class="classTDStatNormal" id="idTentatives_2_2">0</td><td class="classTDStatNormal" id="idEtat_2_2"><img class="classImgEtat" id="idEtat_0_2_2" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgEtat" id="idEtat_1_2_2" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgEtat" id="idEtat_2_2_2" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgEtat" id="idEtat_3_2_2" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;"></td><td class="classTDStatNormal" id="idPointsAcquis_2_2">0</td>
+                    </tr>
+                    <tr>
+                        <td class="classTDStatNormal">S&eacute;rie 2</td><td class="classTDStatNormal">Question 3</td><td class="classTDStatNormal" id="idPointsQuestion_2_3">1</td><td class="classTDStatNormal" id="idTentatives_2_3">0</td><td class="classTDStatNormal" id="idEtat_2_3"><img class="classImgEtat" id="idEtat_0_2_3" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgEtat" id="idEtat_1_2_3" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgEtat" id="idEtat_2_2_3" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgEtat" id="idEtat_3_2_3" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;"></td><td class="classTDStatNormal" id="idPointsAcquis_2_3">0</td>
+                    </tr>
+                    <tr>
+                        <td class="classTDStatNormal">S&eacute;rie 3</td><td class="classTDStatNormal">Question 1</td><td class="classTDStatNormal" id="idPointsQuestion_3_1">1</td><td class="classTDStatNormal" id="idTentatives_3_1">0</td><td class="classTDStatNormal" id="idEtat_3_1"><img class="classImgEtat" id="idEtat_0_3_1" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgEtat" id="idEtat_1_3_1" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgEtat" id="idEtat_2_3_1" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgEtat" id="idEtat_3_3_1" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;"></td><td class="classTDStatNormal" id="idPointsAcquis_3_1">0</td>
+                    </tr>
+                    <tr>
+                        <td class="classTDStatNormal">S&eacute;rie 3</td><td class="classTDStatNormal">Question 2</td><td class="classTDStatNormal" id="idPointsQuestion_3_2">1</td><td class="classTDStatNormal" id="idTentatives_3_2">0</td><td class="classTDStatNormal" id="idEtat_3_2"><img class="classImgEtat" id="idEtat_0_3_2" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgEtat" id="idEtat_1_3_2" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgEtat" id="idEtat_2_3_2" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgEtat" id="idEtat_3_3_2" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;"></td><td class="classTDStatNormal" id="idPointsAcquis_3_2">0</td>
+                    </tr>
+                    <tr>
+                        <td class="classTDStatNormal">S&eacute;rie 3</td><td class="classTDStatNormal">Question 3</td><td class="classTDStatNormal" id="idPointsQuestion_3_3">1</td><td class="classTDStatNormal" id="idTentatives_3_3">0</td><td class="classTDStatNormal" id="idEtat_3_3"><img class="classImgEtat" id="idEtat_0_3_3" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgEtat" id="idEtat_1_3_3" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgEtat" id="idEtat_2_3_3" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgEtat" id="idEtat_3_3_3" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;"></td><td class="classTDStatNormal" id="idPointsAcquis_3_3">0</td>
+                    </tr>
+                    <tr>
+                        <td class="classTDStatNormal">S&eacute;rie 3</td><td class="classTDStatNormal">Question 4</td><td class="classTDStatNormal" id="idPointsQuestion_3_4">1</td><td class="classTDStatNormal" id="idTentatives_3_4">0</td><td class="classTDStatNormal" id="idEtat_3_4"><img class="classImgEtat" id="idEtat_0_3_4" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgEtat" id="idEtat_1_3_4" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgEtat" id="idEtat_2_3_4" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgEtat" id="idEtat_3_3_4" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;"></td><td class="classTDStatNormal" id="idPointsAcquis_3_4">0</td>
+                    </tr>
+                    <tr>
+                        <td class="classTDStatNormal">S&eacute;rie 4</td><td class="classTDStatNormal">Question 1</td><td class="classTDStatNormal" id="idPointsQuestion_4_1">1</td><td class="classTDStatNormal" id="idTentatives_4_1">0</td><td class="classTDStatNormal" id="idEtat_4_1"><img class="classImgEtat" id="idEtat_0_4_1" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgEtat" id="idEtat_1_4_1" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgEtat" id="idEtat_2_4_1" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgEtat" id="idEtat_3_4_1" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;"></td><td class="classTDStatNormal" id="idPointsAcquis_4_1">0</td>
+                    </tr>
+                    <tr>
+                        <td class="classTDStatNormal">S&eacute;rie 4</td><td class="classTDStatNormal">Question 2</td><td class="classTDStatNormal" id="idPointsQuestion_4_2">1</td><td class="classTDStatNormal" id="idTentatives_4_2">0</td><td class="classTDStatNormal" id="idEtat_4_2"><img class="classImgEtat" id="idEtat_0_4_2" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgEtat" id="idEtat_1_4_2" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgEtat" id="idEtat_2_4_2" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgEtat" id="idEtat_3_4_2" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;"></td><td class="classTDStatNormal" id="idPointsAcquis_4_2">0</td>
+                    </tr>
+                    <tr>
+                        <td class="classTDStatNormal">S&eacute;rie 5</td><td class="classTDStatNormal">Question 1</td><td class="classTDStatNormal" id="idPointsQuestion_5_1">1</td><td class="classTDStatNormal" id="idTentatives_5_1">0</td><td class="classTDStatNormal" id="idEtat_5_1"><img class="classImgEtat" id="idEtat_0_5_1" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgEtat" id="idEtat_1_5_1" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgEtat" id="idEtat_2_5_1" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgEtat" id="idEtat_3_5_1" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;"></td><td class="classTDStatNormal" id="idPointsAcquis_5_1">0</td>
+                    </tr>
+                    <tr>
+                        <td class="classTDStatNormal">S&eacute;rie 5</td><td class="classTDStatNormal">Question 2</td><td class="classTDStatNormal" id="idPointsQuestion_5_2">1</td><td class="classTDStatNormal" id="idTentatives_5_2">0</td><td class="classTDStatNormal" id="idEtat_5_2"><img class="classImgEtat" id="idEtat_0_5_2" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgEtat" id="idEtat_1_5_2" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgEtat" id="idEtat_2_5_2" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgEtat" id="idEtat_3_5_2" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;"></td><td class="classTDStatNormal" id="idPointsAcquis_5_2">0</td>
+                    </tr>
+                    <tr>
+                        <td class="classTDStatNormal">S&eacute;rie 5</td><td class="classTDStatNormal">Question 3</td><td class="classTDStatNormal" id="idPointsQuestion_5_3">1</td><td class="classTDStatNormal" id="idTentatives_5_3">0</td><td class="classTDStatNormal" id="idEtat_5_3"><img class="classImgEtat" id="idEtat_0_5_3" src="unknown.png" alt="Non &eacute;valu&eacute;e"><img class="classImgEtat" id="idEtat_1_5_3" src="validated.png" alt="Valid&eacute;e" style="display:none;"><img class="classImgEtat" id="idEtat_2_5_3" src="errorsql.png" alt="Erreur SQL" style="display:none;"><img class="classImgEtat" id="idEtat_3_5_3" src="errorconstraints.png" alt="Erreur s&eacute;mantique" style="display:none;"></td><td class="classTDStatNormal" id="idPointsAcquis_5_3">0</td>
+                    </tr>
+                    <tr>
+                        <td class="classTDStatTotal">5 s&eacute;ries </td><td class="classTDStatTotal">16  questions </td><td class="classTDStatTotal" id="idTotalPointsQuestion">16</td><td class="classTDStatTotal" id="idTotalTentatives">0</td><td class="classTDStatTotal" id="idPointsSur20"> 0/20</td><td class="classTDStatTotal" id="idTotalPointsAcquis">0</td>
+                    </tr>
+                </table>
+                <div id="idUserStatistiquesFin"></div>
+            </div>
+            <div id="infos">
+id : jfcquiz.2021.BUT_INFO_R1_05.QUIZ_01 - 
+type : interrogation - 
+name : BUT INFORMATIQUE -  R1.05 - QUIZ SQL 01 - 
+version xml : 1.0 -
+version xslt : 1.0 -
+    date: 11/09/2021 - 
+    author : Jean-Fran&ccedil;ois Condotta -
+    nameDB : CINEMA21 -
+    refIdDB : jfcdb.2021.CINEMA21_DB -
+    JSQlQUIZ
+</div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="schemeTables2">
+	
+<div id="schemeTables">
+    <div class="classSchemeTable">FILM(<strong><b>id_film</b></strong>,titre,annee_sortie,duree)</div>
+    <div class="classSchemeTable">GENRE(<strong><b>id_genre</b></strong>,nom_genre)</div>
+    <div class="classSchemeTable">APPARTIENT(<strong><b><i>id_film</i></b></strong>,<strong><b><i>id_genre</i></b></strong>)</div>
+    <div class="classSchemeTable">REALISATEUR(<strong><b>id_real</b></strong>,prenom,nom,annee_n,ville_n,pays_n)</div>
+    <div class="classSchemeTable">REALISE(<strong><b><i>id_film</i></b></strong>,<strong><b><i>id_real</i></b></strong>)</div>
+</div>
+
+</div>
+        </div>
+    </body>
+</html>

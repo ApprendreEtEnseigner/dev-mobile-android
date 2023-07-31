@@ -1,0 +1,145 @@
+body{
+    width: 90vw;
+    border:1px solid red;
+    
+    /* margin: auto; */
+
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute; */
+
+
+}
+
+html{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+header, footer{
+    background-color: blue;
+    color: white;
+}
+
+
+/* nav, section, aside{
+    background-color: gainsboro;
+    color: blue;
+} */
+
+/* main > nav, main > section, main > aside{
+    background-color: gainsboro;
+    color: blue;
+} */
+
+main > :is(nav, section, aside){
+    background-color: gainsboro;
+    color: blue;
+}
+/* 
+header h1{
+    float: left;
+}
+
+header img{
+    float: right;
+}
+
+.floatFix{
+    clear: both;
+} */
+
+/* header::after{
+    content: "";
+    clear: both;
+    display: block;
+} */
+
+/* header{
+    position: relative;
+    
+}
+
+header img{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+} */
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#animation{
+    height: 3px;
+    /* border : 1px solid green; */
+    position: relative;
+    overflow: hidden;
+}
+
+.eltAnimation{
+    width: 200px;
+    height: inherit;
+    background-image: linear-gradient(to right, gray, blue, gray);
+    
+    animation: move 2s infinite;
+
+    /* position: absolute; */
+    
+}
+
+@keyframes move {
+    from{
+        /* left: -200px; */
+        transform: translateX(-200px);
+    }
+    to{
+        /* left: 100%; */
+        transform: translateX(90vw);
+    }
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    padding: 20px;
+}
+nav a{
+    box-shadow: 6px 6px 5px 5px red;
+    margin-bottom: 15px;
+}
+
+main{
+    display: flex;
+    column-gap: 5px;
+}
+
+main section{
+    flex-grow: 1;
+}
+
+main aside{
+    flex-basis: 20%;
+}
+
+aside ul{
+    list-style-image: url("icons/puce.png");
+}
+aside a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+footer{
+    text-align: center;
+}
+
+
+

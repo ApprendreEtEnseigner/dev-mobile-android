@@ -1,0 +1,22 @@
+Je suis étudiant en développement digitat. Actuellement, j'apprends l'algorithme à travers un module de mon cursus intitulé: Acquérir les bases de l’algorithmique
+Je suis sur le chapitre:  STRUCTURER UN ALGORITHME
+Voici les objectifs pédagogiques du chapitre:
+Maîtriser la définition des procédures et des 
+fonctions 
+• Maîtriser les notions de paramètre formel et 
+paramètre effectif
+• Définir les différents types de passage des 
+paramètres
+• Connaître la notion de variable locale et de 
+variable globale
+Voici les notions cléf du chapitre:
+Maîtriser la définition des procédures et des 
+fonctions 
+• Maîtriser les notions de paramètre formel et 
+paramètre effectif
+• Définir les différents types de passage des 
+paramètres
+• Connaître la notion de variable locale et de 
+variable globale
+je veux identifier mes points faibles ou essentiels de ma compétence. sur lesquels je dois me consacrer d'avantages. 
+Considérons que tu es expert en conception d'algorithme éfficace et que tu es mon mentor. Réalise moi un QCM de 8 questions, de type output code, en pseudo code,   me permettant d'identifier mes points faibles . Pour chaque question tu me donnes un court  feedback d'expert sur les points de vigilences. Le QCM doit être suffisamment réaliste et réfléter les objectifs pédagogiques du chapitre avec un niveau très difficile (examen de certification).

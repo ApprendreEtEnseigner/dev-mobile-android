@@ -1,0 +1,2 @@
+https://sql.sh/cours/procedure-stockee
+https://learn.microsoft.com/en-us/sql/relational-databases/stored-procedures/create-a-stored-procedure?view=sql-server-ver16

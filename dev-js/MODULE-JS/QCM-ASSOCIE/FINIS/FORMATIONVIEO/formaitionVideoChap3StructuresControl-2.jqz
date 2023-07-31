@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jquiz-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>YB SOW</dc:creator>
+    <dc:title>Playlist - FormationVid&amp;#x00E9;o - Chap3: les Structures de contr&amp;#x00F4;le-2</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>7</version>
+
+<data>
+<title>Playlist - FormationVid&amp;#x00E9;o - Chap3: les Structures de contr&amp;#x00F4;le-2</title>
+
+<timer><seconds>300</seconds><include-timer>1</include-timer></timer>
+
+<reading>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<questions><question-record><question>Quel est le r&amp;#x00E9;sultat de ce code?
+let x = 10;
+let y = 20;
+let z = x &amp;#x003E; y ? &quot;x est plus grand que y&quot; : &quot;x est plus petit que y&quot;;
+console.log(z);
+</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>x est plus grand que y</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>x est plus petit que y</text><feedback>Cette question teste votre compr&amp;#x00E9;hension de l&apos;op&amp;#x00E9;rateur ternaire (?:), qui permet d&apos;assigner une valeur &amp;#x00E0; une variable selon une condition. Il faut bien conna&amp;#x00EE;tre la syntaxe de cet op&amp;#x00E9;rateur, qui prend trois op&amp;#x00E9;randes: une condition, une valeur si la condition est vraie, et une valeur si la condition est fausse. Ici, comme x est inf&amp;#x00E9;rieur &amp;#x00E0; y, l&apos;op&amp;#x00E9;rateur ternaire assigne la valeur &quot;x est plus petit que y&quot; &amp;#x00E0; la variable z, donc le code affiche &quot;x est plus petit que y&quot;.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Erreur de type</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Erreur de syntaxe</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Quel est le r&amp;#x00E9;sultat de ce code?
+let a = 5;
+let b = 10;
+let c = a + b;
+if (c === 10) {
+  console.log(&quot;c vaut 10&quot;);
+} else if (c === 15) {
+  console.log(&quot;c vaut 15&quot;);
+} else {
+  console.log(&quot;c vaut autre chose&quot;);
+</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>c vaut 10</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>c vaut 15</text><feedback>Cette question teste votre compr&amp;#x00E9;hension de l&apos;op&amp;#x00E9;rateur d&apos;&amp;#x00E9;galit&amp;#x00E9; stricte (===), qui compare la valeur et le type de deux expressions. Il faut bien distinguer cet op&amp;#x00E9;rateur de l&apos;op&amp;#x00E9;rateur d&apos;&amp;#x00E9;galit&amp;#x00E9; (==), qui compare seulement la valeur des expressions. Ici, comme c vaut 15 et que c et 15 sont tous les deux de type nombre, l&apos;op&amp;#x00E9;rateur === renvoie vrai, donc le code affiche &quot;c vaut 15&quot;.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>c vaut autre chose</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Erreur de syntaxe</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Quel est le r&amp;#x00E9;sultat de ce code?
+let i = 0;
+for (let i = 0; i &amp;#x003C; 3; i++) {
+  console.log(i);
+}
+console.log(i);
+</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>0 1 2 3</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>0 1 2 0</text><feedback>Cette question teste votre compr&amp;#x00E9;hension de la port&amp;#x00E9;e des variables d&amp;#x00E9;clar&amp;#x00E9;es avec le mot-cl&amp;#x00E9; let, qui sont limit&amp;#x00E9;es au bloc dans lequel elles sont d&amp;#x00E9;finies. Il faut bien distinguer les variables locales et globales, et faire attention aux conflits de noms. Ici, il y a deux variables i, une globale et une locale &amp;#x00E0; la boucle for. La variable locale s&apos;incr&amp;#x00E9;mente jusqu&apos;&amp;#x00E0; &amp;#x00EA;tre inf&amp;#x00E9;rieure &amp;#x00E0; 3, donc la boucle affiche les nombres de 0 &amp;#x00E0; 2. La variable globale reste inchang&amp;#x00E9;e, donc le code affiche aussi 0 apr&amp;#x00E8;s la boucle.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>0 1 2 Erreur de r&amp;#x00E9;f&amp;#x00E9;rence</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Erreur de syntaxe</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Quel est le r&amp;#x00E9;sultat de ce code?
+let j = 0;
+while (j &amp;#x003C; 3) {
+  console.log(j);
+  j++;
+}
+console.log(j);
+</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>0 1 2</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>0 1 2 3</text><feedback>Cette question teste votre compr&amp;#x00E9;hension de la boucle while, qui permet de r&amp;#x00E9;p&amp;#x00E9;ter un bloc de code tant qu&apos;une condition est vraie. Il faut bien suivre l&apos;&amp;#x00E9;volution de la variable j et le nombre d&apos;it&amp;#x00E9;rations de la boucle. Ici, comme j commence &amp;#x00E0; 0 et s&apos;incr&amp;#x00E9;mente &amp;#x00E0; chaque tour, la boucle s&apos;arr&amp;#x00EA;te quand j vaut 3, donc le code affiche les nombres de 0 &amp;#x00E0; 2 dans la boucle, puis 3 apr&amp;#x00E8;s la boucle.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>1 2 3</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Erreur de boucle infinie</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Quel est le r&amp;#x00E9;sultat de ce code?
+let k = 0;
+do {
+  console.log(k);
+} while (k++ &amp;#x003C; 3);
+</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>0 1 2</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>0 1 2 3</text><feedback>Cette question teste votre compr&amp;#x00E9;hension de la boucle do...while, qui permet de r&amp;#x00E9;p&amp;#x00E9;ter un bloc de code au moins une fois, puis tant qu&apos;une condition est vraie. Il faut aussi conna&amp;#x00EE;tre la diff&amp;#x00E9;rence entre l&apos;op&amp;#x00E9;rateur d&apos;incr&amp;#x00E9;mentation pr&amp;#x00E9;fix&amp;#x00E9; (++k) et postfix&amp;#x00E9; (k++), qui modifie la valeur de la variable avant ou apr&amp;#x00E8;s son &amp;#x00E9;valuation. Ici, comme k commence &amp;#x00E0; 0 et s&apos;incr&amp;#x00E9;mente apr&amp;#x00E8;s d&apos;&amp;#x00EA;tre compar&amp;#x00E9; &amp;#x00E0; 3, la boucle s&apos;arr&amp;#x00EA;te quand k vaut 4, donc le code affiche les nombres de 0 &amp;#x00E0; 3.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>1 2 3</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>1 2 3 4</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record></questions>
+</data>
+
+<hotpot-config-file>
+<jquiz>
+<exercise-subtitle>Quiz</exercise-subtitle>
+<instructions></instructions>
+<guess-correct>Correct!</guess-correct>
+<guess-incorrect>Sorry! Try again.</guess-incorrect>
+<partly-incorrect>Your answer is partly wrong: </partly-incorrect>
+<enter-a-guess>Please enter a guess.</enter-a-guess>
+<next-correct-letter>Next correct letter in the answer: </next-correct-letter>
+<correct-answers>Correct answers: </correct-answers>
+<show-answer-caption>Show answer</show-answer-caption>
+<include-hint>1</include-hint>
+<include-show-answer>1</include-show-answer>
+<next-ex-url>nextpage.htm</next-ex-url>
+<send-email>0</send-email>
+<continuous-scoring>1</continuous-scoring>
+<show-correct-first-time>1</show-correct-first-time>
+<shuffle-questions>1</shuffle-questions>
+<shuffle-answers>1</shuffle-answers>
+<show-limited-questions>0</show-limited-questions>
+<questions-to-show>2</questions-to-show>
+<short-answer-tries-on-hybrid-q>2</short-answer-tries-on-hybrid-q>
+<separate-javascript-file>0</separate-javascript-file>
+<case-sensitive>0</case-sensitive>
+<include-keypad>0</include-keypad>
+</jquiz>
+
+<global>
+<your-score-is>Your score is </your-score-is>
+<correct-indicator>&amp;#x2714;</correct-indicator>
+<incorrect-indicator>&amp;#x2718;</incorrect-indicator>
+<correct-first-time>Questions answered correctly first time: </correct-first-time>
+<completed-so-far>Questions completed so far: </completed-so-far>
+<exercise-completed>You have completed the exercise.</exercise-completed>
+<keypad-characters></keypad-characters>
+<times-up>Your time is over!</times-up>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Index</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>1</include-contents>
+<include-back>1</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Arial,&quot;Comic Sans MS&quot;,Geneva,sans-serif</font-face>
+<font-size>medium</font-size>
+<page-bg-color>#C0C0C0</page-bg-color>
+<title-color>#000000</title-color>
+<ex-bg-color>#FFFFFF</ex-bg-color>
+<text-color>#000000</text-color>
+<link-color>#0000FF</link-color>
+<vlink-color>#0000CC</vlink-color>
+<nav-bar-color>#000000</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+<correct-first-time>Questions answered correctly first time: </correct-first-time>
+<check-caption>Check</check-caption>
+<ok-caption>OK</ok-caption>
+<next-q-caption>=&amp;#x003E;</next-q-caption>
+<last-q-caption>&amp;#x003C;=</last-q-caption>
+<hint-caption>Hint</hint-caption>
+<show-all-questions-caption>Show all questions</show-all-questions-caption>
+<show-one-by-one-caption>Show questions one by one</show-one-by-one-caption>
+<show-also-correct>1</show-also-correct>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+</global>
+</hotpot-config-file>
+</hotpot-jquiz-file>

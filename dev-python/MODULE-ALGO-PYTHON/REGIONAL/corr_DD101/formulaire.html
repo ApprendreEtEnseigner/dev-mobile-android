@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background-color: blueviolet;
+            color: white;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        header h2 {
+            margin-bottom: 0;
+        }
+
+        form {
+            border: 1px solid black;
+            border-radius: 0px 0px 10px 10px;
+            border-top-color: transparent;
+        }
+
+        form span {
+            font-size: 2em;
+            background-color: violet;
+            color: white;
+            border-radius: 50%;
+            width: 1.2em;
+            height: 1.2em;
+            display: inline-block;
+            text-align: center;
+        }
+
+        form>* {
+            width: 90%;
+            margin: 10px auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome</h1>
+        <h2>Enregistrez vous</h2>
+    </header>
+    <main>
+        <form action="#">
+            <ol>
+                <li>aa</li>
+                <li>aaabbb</li>
+            </ol>
+            <div><span>1</span> Coordonnées</div>
+            <div>
+                Cévilité :
+                <label>
+                    <input type="radio" name="cv" id="cv" value="mr" checked>Mr
+                </label>
+                <label>
+                    <input type="radio" name="cv" id="cv2" value="mme">Mme
+                </label>
+            </div>
+            <input type="text" name="nom" id="nom" placeholder="Nom complet">
+            <input type="email" name="email" id="email" placeholder="Votre Email">
+
+
+            <div><span>2</span> Mot de passe</div>
+
+            <input type="password" name="motdepasse" id="motdepasse" placeholder="Password">
+            <input type="password" name="motdepasse2" id="motdepasse2" placeholder="Password">
+
+            <input type="submit" value="Valider">
+        </form>
+    </main>
+
+
+</body>
+
+</html>

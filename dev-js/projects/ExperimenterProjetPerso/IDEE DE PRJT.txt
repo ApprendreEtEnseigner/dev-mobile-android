@@ -1,0 +1,3 @@
+Se référer des promts de bing ai pour compléter le cahier des charges
+Créer un tableau de bord pour
+- reporting working

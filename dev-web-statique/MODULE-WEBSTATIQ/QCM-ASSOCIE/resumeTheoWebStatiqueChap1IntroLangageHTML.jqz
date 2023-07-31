@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jquiz-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>YB SOW</dc:creator>
+    <dc:title>ResumeTheorique - WebStatique - chap1 - IntroLangage-HTML-1</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>7</version>
+
+<data>
+<title>ResumeTheorique - WebStatique - chap1 - IntroLangage-HTML-1</title>
+
+<timer><seconds>420</seconds><include-timer>1</include-timer></timer>
+
+<reading>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<questions><question-record><question>Quelle est la signification de l&apos;acronyme HTML ?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Hyper Text Markup Language</text><feedback>HTML est un langage de balisage qui sert &amp;#x00E0; structurer les pages web en utilisant des &amp;#x00E9;l&amp;#x00E9;ments hypertextes. Les autres r&amp;#x00E9;ponses sont des confusions &amp;#x00E0; &amp;#x00E9;viter.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Hyper Text Manipulation Language</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Hyper Text Machine Language</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Quel est le r&amp;#x00F4;le du W3C dans l&apos;&amp;#x00E9;volution du HTML ?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Il d&amp;#x00E9;veloppe et distribue les navigateurs web</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Il h&amp;#x00E9;berge et s&amp;#x00E9;curise les sites web</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Il cr&amp;#x00E9;e et maintient les normes du HTML</text><feedback>Le W3C (World Wide Web Consortium) est l&apos;organisme international qui d&amp;#x00E9;finit les sp&amp;#x00E9;cifications, les recommandations et les bonnes pratiques du HTML et d&apos;autres technologies web. Les autres r&amp;#x00E9;ponses sont des confusions &amp;#x00E0; &amp;#x00E9;viter.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Quelle est la diff&amp;#x00E9;rence entre une balise ouvrante et une balise fermante ?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Une balise ouvrante indique le d&amp;#x00E9;but d&apos;un &amp;#x00E9;l&amp;#x00E9;ment et une balise fermante indique la fin d&apos;un &amp;#x00E9;l&amp;#x00E9;ment</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Une balise ouvrante contient un attribut et une balise fermante contient une valeur</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Une balise ouvrante indique le d&amp;#x00E9;but d&apos;un &amp;#x00E9;l&amp;#x00E9;ment et une balise fermante indique la fin d&apos;un &amp;#x00E9;l&amp;#x00E9;ment</text><feedback>. Par exemple, &amp;#x0026;ltp&amp;#x0026;gt est une balise ouvrante qui marque le d&amp;#x00E9;but d&apos;un paragraphe, et &amp;#x0026;lt/p&amp;#x0026;gt est une balise fermante qui marque la fin du paragraphe. Les autres r&amp;#x00E9;ponses sont des confusions &amp;#x00E0; &amp;#x00E9;viter.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Quels sont les deux principaux types de contenu que l&apos;on peut int&amp;#x00E9;grer dans une page HTML ?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Des textes et des images</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Des textes et des &amp;#x00E9;l&amp;#x00E9;ments s&amp;#x00E9;mantiques</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Des textes et des &amp;#x00E9;l&amp;#x00E9;ments s&amp;#x00E9;mantiques</text><feedback>Le HTML permet d&apos;ins&amp;#x00E9;rer du texte dans une page web, mais aussi de lui donner un sens gr&amp;#x00E2;ce aux &amp;#x00E9;l&amp;#x00E9;ments s&amp;#x00E9;mantiques, qui indiquent la fonction ou le r&amp;#x00F4;le du texte (par exemple, un titre, un lien, une liste, etc.). Les autres r&amp;#x00E9;ponses sont des confusions &amp;#x00E0; &amp;#x00E9;viter.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Quelle est la propri&amp;#x00E9;t&amp;#x00E9; des navigateurs qui permet d&apos;afficher correctement les pages web malgr&amp;#x00E9; les erreurs de syntaxe du HTML ?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>La correction automatique</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>L&apos;interpr&amp;#x00E9;tation dynamique</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>La tol&amp;#x00E9;rance aux fautes</text><feedback>Les navigateurs sont capables de g&amp;#x00E9;rer les erreurs de syntaxe du HTML en affichant le contenu de la page web de la mani&amp;#x00E8;re la plus logique possible, sans interrompre le chargement de la page. Les autres r&amp;#x00E9;ponses sont des confusions &amp;#x00E0; &amp;#x00E9;viter.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Quel &amp;#x00E9;l&amp;#x00E9;ment HTML permet de cr&amp;#x00E9;er une liste descriptive, c&apos;est-&amp;#x00E0;-dire une liste de termes et leurs d&amp;#x00E9;finitions ?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>dt</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>dd</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>dl</text><feedback>Cet &amp;#x00E9;l&amp;#x00E9;ment sert &amp;#x00E0; englober une liste descriptive, compos&amp;#x00E9;e de paires de termes (&amp;#x0026;dtdt&amp;#x0026;gt) et de d&amp;#x00E9;finitions (&amp;#x0026;ltd&amp;#x0026;gt). Les autres r&amp;#x00E9;ponses sont des confusions &amp;#x00E0; &amp;#x00E9;viter.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Quel attribut HTML permet de sp&amp;#x00E9;cifier la langue du contenu d&apos;un &amp;#x00E9;l&amp;#x00E9;ment ?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>language</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>locale</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>lang</text><feedback>Cet attribut sert &amp;#x00E0; indiquer la langue du contenu d&apos;un &amp;#x00E9;l&amp;#x00E9;ment, par exemple &amp;#x0026;ltp lang=&quot;fr&quot;&amp;#x0026;gtBonjour&amp;#x0026;lt/p&amp;#x0026;gt. Les autres r&amp;#x00E9;ponses sont des confusions &amp;#x00E0; &amp;#x00E9;viter.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Quel &amp;#x00E9;l&amp;#x00E9;ment HTML permet de marquer un texte comme &amp;#x00E9;tant du code informatique ?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>&amp;#x0026;ltpre&amp;#x0026;gt</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x0026;ltscript&amp;#x0026;gt</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x0026;ltcode&amp;#x0026;gt</text><feedback>Cet &amp;#x00E9;l&amp;#x00E9;ment sert &amp;#x00E0; indiquer qu&apos;un texte est du code informatique, par exemple &amp;#x0026;ltcode&amp;#x0026;gtconsole.log(&quot;Hello world&quot;);&amp;#x0026;lt/code&amp;#x0026;gt. Les autres r&amp;#x00E9;ponses sont des confusions &amp;#x00E0; &amp;#x00E9;viter.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Quel &amp;#x00E9;l&amp;#x00E9;ment HTML permet de cr&amp;#x00E9;er un indice ou un exposant dans un texte ?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>&amp;#x0026;ltsmall&amp;#x0026;gt ou &amp;#x0026;ltbig&amp;#x0026;gt</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x0026;ltlow&amp;#x0026;gt ou &amp;#x0026;lthigh&amp;#x0026;gt</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x0026;ltsub&amp;#x0026;gt ou &amp;#x0026;ltsup&amp;#x0026;gt</text><feedback>Ces &amp;#x00E9;l&amp;#x00E9;ments servent &amp;#x00E0; cr&amp;#x00E9;er un indice (par exemple H&amp;#x0026;ltsub&amp;#x0026;gt2&amp;#x0026;lt/sub&amp;#x0026;gtO) ou un exposant (par exemple E = mc&amp;#x0026;ltsup&amp;#x0026;gt2&amp;#x0026;lt/sup&amp;#x0026;gt). Les autres r&amp;#x00E9;ponses sont des confusions &amp;#x00E0; &amp;#x00E9;viter.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record></questions>
+</data>
+
+<hotpot-config-file>
+<jquiz>
+<exercise-subtitle>La famille</exercise-subtitle>
+<instructions></instructions>
+<guess-correct>Correct!</guess-correct>
+<guess-incorrect>Sorry! Try again.</guess-incorrect>
+<partly-incorrect>Your answer is partly wrong: </partly-incorrect>
+<enter-a-guess>Please enter a guess.</enter-a-guess>
+<next-correct-letter>Next correct letter in the answer: </next-correct-letter>
+<correct-answers>Correct answers: </correct-answers>
+<show-answer-caption>Show answer</show-answer-caption>
+<include-hint>1</include-hint>
+<include-show-answer>1</include-show-answer>
+<next-ex-url>nextpage.htm</next-ex-url>
+<send-email>0</send-email>
+<continuous-scoring>1</continuous-scoring>
+<show-correct-first-time>1</show-correct-first-time>
+<shuffle-questions>1</shuffle-questions>
+<shuffle-answers>1</shuffle-answers>
+<show-limited-questions>0</show-limited-questions>
+<questions-to-show>2</questions-to-show>
+<short-answer-tries-on-hybrid-q>2</short-answer-tries-on-hybrid-q>
+<separate-javascript-file>0</separate-javascript-file>
+<case-sensitive>0</case-sensitive>
+<include-keypad>0</include-keypad>
+</jquiz>
+
+<global>
+<your-score-is>Your score is </your-score-is>
+<correct-indicator>&amp;#x2714;</correct-indicator>
+<incorrect-indicator>&amp;#x2718;</incorrect-indicator>
+<correct-first-time>Questions answered correctly first time: </correct-first-time>
+<completed-so-far>Questions completed so far: </completed-so-far>
+<exercise-completed>You have completed the exercise.</exercise-completed>
+<keypad-characters></keypad-characters>
+<times-up>Your time is over!</times-up>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Index</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>1</include-contents>
+<include-back>1</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Arial,&quot;Comic Sans MS&quot;,Geneva,sans-serif</font-face>
+<font-size>medium</font-size>
+<page-bg-color>#C0C0C0</page-bg-color>
+<title-color>#000000</title-color>
+<ex-bg-color>#FFFFFF</ex-bg-color>
+<text-color>#000000</text-color>
+<link-color>#0000FF</link-color>
+<vlink-color>#0000CC</vlink-color>
+<nav-bar-color>#000000</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+<correct-first-time>Questions answered correctly first time: </correct-first-time>
+<check-caption>Check</check-caption>
+<ok-caption>OK</ok-caption>
+<next-q-caption>=&amp;#x003E;</next-q-caption>
+<last-q-caption>&amp;#x003C;=</last-q-caption>
+<hint-caption>Hint</hint-caption>
+<show-all-questions-caption>Show all questions</show-all-questions-caption>
+<show-one-by-one-caption>Show questions one by one</show-one-by-one-caption>
+<show-also-correct>1</show-also-correct>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+</global>
+</hotpot-config-file>
+</hotpot-jquiz-file>

@@ -1,0 +1,22 @@
+body{
+    height: 100vh;
+
+}
+
+main{
+    border: 1px solid red;
+}
+.entete{
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    padding: 15px;
+   
+}
+
+img{
+    padding-left: 300px;
+}
+

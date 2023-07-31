@@ -1,0 +1,96 @@
+body {
+		-webkit-print-color-adjust: exact;
+ font-family:"times new roman", times, serif;
+ font-size:100%;
+ color:#000000;
+ background-color:#FFFFFF;
+}
+
+
+#principal{
+	min-height:1000px;
+	background-color:#F7EF99;
+	margin-left: auto;
+	margin-right:auto;
+	width:960px;
+	padding:10px 10px;
+	border-radius:10px;
+}
+
+#titreTables{
+	background-color:#F78E69;
+	font-size:150%;
+	border-radius:5px;
+	padding:5px 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+#presentationTables{
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+.classTable{
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color:#F1BB87;
+	padding:10px 10px;
+	border-radius:5px;
+}
+
+.nameTable{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+
+.contentTable table {
+	 font-size:90%;
+	margin-left: auto;
+	margin-right: auto;
+background-color:#ABE188;
+margin-bottom: 5px;
+padding:5px 5px;
+border: 1px solid black;
+}
+
+.contentTable table th {
+	text-align: center;
+}
+
+.contentTable table td {
+	text-align: center;
+}
+
+#infos{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+ font-size:70%;
+}
+
+
+/*
+#ABE188 vert
+#F7EF99 jaune
+#F1BB87 orange clair
+#F78E69 orange foncé
+#5D675B gris
+
+
+
+
+*/

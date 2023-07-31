@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jquiz-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>YB SOW</dc:creator>
+    <dc:title>Playlist - FormationVid&amp;#x00E9;o - Chap2: les variables</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>7</version>
+
+<data>
+<title>Playlist - FormationVid&amp;#x00E9;o - Chap2: les variables</title>
+
+<timer><seconds>360</seconds><include-timer>1</include-timer></timer>
+
+<reading>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<questions><question-record><question>Quel est le r&amp;#x00E9;sultat de l&apos;expression suivante : 2 + 3 * 4 ? </question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>20</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>14</text><feedback>L&apos;op&amp;#x00E9;rateur * a une pr&amp;#x00E9;c&amp;#x00E9;dence plus &amp;#x00E9;lev&amp;#x00E9;e que l&apos;op&amp;#x00E9;rateur +, donc l&apos;expression est &amp;#x00E9;valu&amp;#x00E9;e comme 2 + (3 * 4). Pour changer l&apos;ordre d&apos;&amp;#x00E9;valuation, il faut utiliser des parenth&amp;#x00E8;ses, par exemple : (2 + 3) * 4.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>24</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>SyntaxError</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Quelle est la diff&amp;#x00E9;rence entre les op&amp;#x00E9;rateurs == et === ? </question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>== compare les valeurs, === compare les valeurs et les types</text><feedback>L&apos;op&amp;#x00E9;rateur == effectue une conversion de type implicite avant de comparer les valeurs, ce qui peut entra&amp;#x00EE;ner des r&amp;#x00E9;sultats inattendus. Par exemple : &quot;1&quot; == 1 renvoie true, mais &quot;1&quot; === 1 renvoie false. L&apos;op&amp;#x00E9;rateur === v&amp;#x00E9;rifie que les valeurs et les types sont identiques, ce qui est g&amp;#x00E9;n&amp;#x00E9;ralement plus s&amp;#x00FB;r et plus fiable. Par exemple : &quot;1&quot; === &quot;1&quot; renvoie true, mais &quot;1&quot; === 1 renvoie false.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>== compare les types, === compare les types et les valeurs</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>== compare les r&amp;#x00E9;f&amp;#x00E9;rences, === compare les valeurs</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Il n&apos;y a pas de diff&amp;#x00E9;rence</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Quel est le r&amp;#x00E9;sultat de l&apos;expression suivante : !!&quot;foo&quot; ? </question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>&quot;foo&quot;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>false</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>true</text><feedback>L&apos;op&amp;#x00E9;rateur ! effectue une conversion bool&amp;#x00E9;enne de son op&amp;#x00E9;rande et renvoie son inverse. Par exemple : !true renvoie false, !false renvoie true, !0 renvoie true, !&quot;&quot; renvoie true. L&apos;op&amp;#x00E9;rateur !! effectue deux fois cette op&amp;#x00E9;ration, ce qui revient &amp;#x00E0; renvoyer la valeur bool&amp;#x00E9;enne de l&apos;op&amp;#x00E9;rande. Par exemple : !!true renvoie true, !!false renvoie false, !!0 renvoie false, !!&quot;&quot; renvoie false. Toutes les valeurs non vides sont consid&amp;#x00E9;r&amp;#x00E9;es comme vraies en JavaScript, donc !! renvoie true pour toute valeur non vide. Par exemple : !!&quot;foo&quot; renvoie true.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>TypeError</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Quel est le r&amp;#x00E9;sultat de l&apos;expression suivante : typeof null ? </question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>&quot;null&quot;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&quot;object&quot;</text><feedback>L&apos;op&amp;#x00E9;rateur typeof renvoie une cha&amp;#x00EE;ne de caract&amp;#x00E8;res indiquant le type d&apos;un objet donn&amp;#x00E9;. Par exemple : typeof 42 renvoie &quot;number&quot;, typeof &quot;foo&quot; renvoie &quot;string&quot;, typeof undefined renvoie &quot;undefined&quot;. Cependant, il existe un cas particulier pour la valeur null, qui est consid&amp;#x00E9;r&amp;#x00E9;e comme un objet vide en JavaScript. Ainsi, typeof null renvoie &quot;object&quot;, ce qui est souvent consid&amp;#x00E9;r&amp;#x00E9; comme une erreur du langage.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&quot;undefined&quot;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&quot;unknown&quot;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Quel est le r&amp;#x00E9;sultat de l&apos;expression suivante : 1 + &quot;2&quot; + 3 ? </question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>&quot;123&quot;</text><feedback>L&apos;op&amp;#x00E9;rateur + peut &amp;#x00EA;tre utilis&amp;#x00E9; pour faire une addition num&amp;#x00E9;rique ou une concat&amp;#x00E9;nation de cha&amp;#x00EE;nes de caract&amp;#x00E8;res. Si l&apos;un des op&amp;#x00E9;randes est une cha&amp;#x00EE;ne de caract&amp;#x00E8;res, l&apos;autre op&amp;#x00E9;rande est converti en cha&amp;#x00EE;ne de caract&amp;#x00E8;res avant la concat&amp;#x00E9;nation. Par exemple : 1 + &quot;2&quot; renvoie &quot;12&quot;, &quot;2&quot; + 3 renvoie &quot;23&quot;. Ainsi, l&apos;expression 1 + &quot;2&quot; + 3 est &amp;#x00E9;valu&amp;#x00E9;e comme (1 + &quot;2&quot;) + 3, qui donne &quot;12&quot; + 3, qui donne &quot;123&quot;.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&quot;15&quot;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>6</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>NaN</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Quelle est la valeur de `c` apr&amp;#x00E8;s l&apos;ex&amp;#x00E9;cution du code suivant?
+var c = 1;
+function bar() {
+  c = 2;
+  var c = 3;
+  console.log(c);
+}
+bar();
+console.log(c);
+</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>3 et 1</text><feedback>Ce code illustre le fait que la d&amp;#x00E9;claration d&apos;une variable avec `var` dans une fonction cr&amp;#x00E9;e une variable locale &amp;#x00E0; la fonction, qui masque la variable globale du m&amp;#x00EA;me nom. Donc, quand on affecte `c = 2`, on modifie la variable locale, pas la globale. Ensuite, quand on d&amp;#x00E9;clare `var c = 3`, on red&amp;#x00E9;clare et r&amp;#x00E9;initialise la variable locale, sans affecter la globale. Donc, le code affiche 3 puis 1.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>3 et 2</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>2 et 1</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>2 et 3</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>. Quelle est la valeur de d apr&amp;#x00E8;s l&apos;ex&amp;#x00E9;cution du code suivant?
+let d = 1;
+if (true) {
+  let d = 2;
+  console.log(d);
+}
+console.log(d);
+</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>1 et 1</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>1 et 2</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>2 et 1</text><feedback>Ce code illustre le fait que la d&amp;#x00E9;claration d&apos;une variable avec `let` dans un bloc cr&amp;#x00E9;e une variable locale au bloc, qui masque la variable du scope englobant du m&amp;#x00EA;me nom. Donc, quand on d&amp;#x00E9;clare `let d = 2`, on cr&amp;#x00E9;e une nouvelle variable qui n&apos;affecte pas la variable globale. Donc, le code affiche 2 puis 1.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>2 et 2</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question></question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record></questions>
+</data>
+
+<hotpot-config-file>
+<jquiz>
+<exercise-subtitle>Quiz</exercise-subtitle>
+<instructions></instructions>
+<guess-correct>Correct!</guess-correct>
+<guess-incorrect>Sorry! Try again.</guess-incorrect>
+<partly-incorrect>Your answer is partly wrong: </partly-incorrect>
+<enter-a-guess>Please enter a guess.</enter-a-guess>
+<next-correct-letter>Next correct letter in the answer: </next-correct-letter>
+<correct-answers>Correct answers: </correct-answers>
+<show-answer-caption>Show answer</show-answer-caption>
+<include-hint>1</include-hint>
+<include-show-answer>1</include-show-answer>
+<next-ex-url>nextpage.htm</next-ex-url>
+<send-email>0</send-email>
+<continuous-scoring>1</continuous-scoring>
+<show-correct-first-time>1</show-correct-first-time>
+<shuffle-questions>1</shuffle-questions>
+<shuffle-answers>1</shuffle-answers>
+<show-limited-questions>0</show-limited-questions>
+<questions-to-show>2</questions-to-show>
+<short-answer-tries-on-hybrid-q>2</short-answer-tries-on-hybrid-q>
+<separate-javascript-file>0</separate-javascript-file>
+<case-sensitive>0</case-sensitive>
+<include-keypad>0</include-keypad>
+</jquiz>
+
+<global>
+<your-score-is>Your score is </your-score-is>
+<correct-indicator>&amp;#x2714;</correct-indicator>
+<incorrect-indicator>&amp;#x2718;</incorrect-indicator>
+<correct-first-time>Questions answered correctly first time: </correct-first-time>
+<completed-so-far>Questions completed so far: </completed-so-far>
+<exercise-completed>You have completed the exercise.</exercise-completed>
+<keypad-characters></keypad-characters>
+<times-up>Your time is over!</times-up>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Index</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>1</include-contents>
+<include-back>1</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Arial,&quot;Comic Sans MS&quot;,Geneva,sans-serif</font-face>
+<font-size>medium</font-size>
+<page-bg-color>#C0C0C0</page-bg-color>
+<title-color>#000000</title-color>
+<ex-bg-color>#FFFFFF</ex-bg-color>
+<text-color>#000000</text-color>
+<link-color>#0000FF</link-color>
+<vlink-color>#0000CC</vlink-color>
+<nav-bar-color>#000000</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+<correct-first-time>Questions answered correctly first time: </correct-first-time>
+<check-caption>Check</check-caption>
+<ok-caption>OK</ok-caption>
+<next-q-caption>=&amp;#x003E;</next-q-caption>
+<last-q-caption>&amp;#x003C;=</last-q-caption>
+<hint-caption>Hint</hint-caption>
+<show-all-questions-caption>Show all questions</show-all-questions-caption>
+<show-one-by-one-caption>Show questions one by one</show-one-by-one-caption>
+<show-also-correct>1</show-also-correct>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+</global>
+</hotpot-config-file>
+</hotpot-jquiz-file>

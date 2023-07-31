@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jquiz-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>YB SOW</dc:creator>
+    <dc:title>Playlist - FormationVid&amp;#x00E9;o - Chap1: les variables</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>7</version>
+
+<data>
+<title>Playlist - FormationVid&amp;#x00E9;o - Chap1: les variables</title>
+
+<timer><seconds>60</seconds><include-timer>0</include-timer></timer>
+
+<reading>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<questions><question-record><question>:** Quelle est la diff&amp;#x00E9;rence entre les variables d&amp;#x00E9;clar&amp;#x00E9;es avec `var` et celles d&amp;#x00E9;clar&amp;#x00E9;es avec `let` ou `const` ?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Les variables d&amp;#x00E9;clar&amp;#x00E9;es avec `var` ont une port&amp;#x00E9;e de bloc, tandis que les variables d&amp;#x00E9;clar&amp;#x00E9;es avec `let` ou `const` ont une port&amp;#x00E9;e de fonction.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Les variables d&amp;#x00E9;clar&amp;#x00E9;es avec `var` ont une port&amp;#x00E9;e de fonction, tandis que les variables d&amp;#x00E9;clar&amp;#x00E9;es avec `let` ou `const` ont une port&amp;#x00E9;e de bloc.</text><feedback>Il est important de comprendre la port&amp;#x00E9;e des variables en JavaScript, car cela peut affecter la fa&amp;#x00E7;on dont les variables sont accessibles et utilis&amp;#x00E9;es dans le code. Les variables d&amp;#x00E9;clar&amp;#x00E9;es avec `var` peuvent &amp;#x00EA;tre accessibles en dehors de la fonction dans laquelle elles sont d&amp;#x00E9;clar&amp;#x00E9;es, alors que les variables d&amp;#x00E9;clar&amp;#x00E9;es avec `let` ou `const` ne le peuvent pas.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Il n&apos;y a pas de diff&amp;#x00E9;rence entre les variables d&amp;#x00E9;clar&amp;#x00E9;es avec `var` et celles d&amp;#x00E9;clar&amp;#x00E9;es avec `let` ou `const`.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Que se passe-t-il si vous d&amp;#x00E9;clarez une variable avec `let` ou `const` sans l&apos;initialiser ?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Une erreur sera g&amp;#x00E9;n&amp;#x00E9;r&amp;#x00E9;e.</text><feedback>Il est important de toujours initialiser les variables lors de leur d&amp;#x00E9;claration en JavaScript. Si vous essayez d&apos;utiliser une variable non initialis&amp;#x00E9;e, une erreur sera g&amp;#x00E9;n&amp;#x00E9;r&amp;#x00E9;e.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>La variable sera initialis&amp;#x00E9;e &amp;#x00E0; `null`.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>La variable sera initialis&amp;#x00E9;e &amp;#x00E0; `undefined`.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Quelle est la diff&amp;#x00E9;rence entre `let` et `const` ?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Les variables d&amp;#x00E9;clar&amp;#x00E9;es avec `let` peuvent &amp;#x00EA;tre r&amp;#x00E9;affect&amp;#x00E9;es, tandis que celles d&amp;#x00E9;clar&amp;#x00E9;es avec `const` ne le peuvent pas.</text><feedback>Les variables d&amp;#x00E9;clar&amp;#x00E9;es avec `const` ne peuvent pas &amp;#x00EA;tre r&amp;#x00E9;affect&amp;#x00E9;es apr&amp;#x00E8;s leur initialisation, tandis que les variables d&amp;#x00E9;clar&amp;#x00E9;es avec `let` le peuvent.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Les variables d&amp;#x00E9;clar&amp;#x00E9;es avec `const` peuvent &amp;#x00EA;tre r&amp;#x00E9;affect&amp;#x00E9;es, tandis que celles d&amp;#x00E9;clar&amp;#x00E9;es avec `let` ne le peuvent pas.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Il n&apos;y a pas de diff&amp;#x00E9;rence entre les variables d&amp;#x00E9;clar&amp;#x00E9;es avec `let` et celles d&amp;#x00E9;clar&amp;#x00E9;es avec `const`.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Quelle est la valeur de la variable `x` apr&amp;#x00E8;s l&apos;ex&amp;#x00E9;cution du code suivant ?
+let x = 10;
+if (true) {
+  let x = 20;
+  console.log(x);
+}
+console.log(x);
+</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>10</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>20</text><feedback>Il est important de comprendre comment la port&amp;#x00E9;e des variables fonctionne en JavaScript. Dans cet exemple, la variable `x` est red&amp;#x00E9;finie &amp;#x00E0; l&apos;int&amp;#x00E9;rieur du bloc if en utilisant le mot-cl&amp;#x00E9; `let`, cr&amp;#x00E9;ant ainsi une nouvelle variable ayant la m&amp;#x00EA;me nom mais une port&amp;#x00E9;e diff&amp;#x00E9;rente.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Une erreur sera g&amp;#x00E9;n&amp;#x00E9;r&amp;#x00E9;e.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Quelle est la valeur de la variable `y` apr&amp;#x00E8;s l&apos;ex&amp;#x00E9;cution du code suivant ?
+const y = [1, 2, 3];
+y.push(4);
+console.log(y);
+</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>[1, 2, 3]</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>[1, 2, 3, 4]</text><feedback>Il est important de comprendre que m&amp;#x00EA;me si une variable est d&amp;#x00E9;clar&amp;#x00E9;e avec le mot-cl&amp;#x00E9; `const`, son contenu peut toujours &amp;#x00EA;tre modifi&amp;#x00E9; si elle contient un objet ou un tableau. Dans cet exemple, nous ajoutons un &amp;#x00E9;l&amp;#x00E9;ment &amp;#x00E0; un tableau qui est stock&amp;#x00E9; dans la variable `y`.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Une erreur sera g&amp;#x00E9;n&amp;#x00E9;r&amp;#x00E9;e.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Quelle est la valeur de la variable `z` apr&amp;#x00E8;s l&apos;ex&amp;#x00E9;cution du code suivant ?
+function test() {
+  var z = &quot;hello&quot;;
+}
+test();
+console.log(z);</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>&quot;hello&quot;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Une erreur sera g&amp;#x00E9;n&amp;#x00E9;r&amp;#x00E9;e.</text><feedback>Il est important de comprendre que la port&amp;#x00E9;e des variables en JavaScript est li&amp;#x00E9;e aux fonctions dans lesquelles elles sont d&amp;#x00E9;clar&amp;#x00E9;es. Dans cet exemple, la variable `z` est d&amp;#x00E9;clar&amp;#x00E9;e &amp;#x00E0; l&apos;int&amp;#x00E9;rieur d&apos;une fonction et n&apos;est pas accessible en dehors de cette fonction.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>undefined</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Quelle est la valeur de la variable `a` apr&amp;#x00E8;s l&apos;ex&amp;#x00E9;cution du code suivant ?
+let a = &quot;hello&quot;;
+a = 123;
+console.log(a);
+</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>&quot;hello&quot;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>123</text><feedback>Il est important de comprendre que les variables d&amp;#x00E9;clar&amp;#x00E9;es avec le mot-cl&amp;#x00E9; `let` peuvent &amp;#x00EA;tre r&amp;#x00E9;affect&amp;#x00E9;es apr&amp;#x00E8;s leur initialisation. Dans cet exemple, nous r&amp;#x00E9;affectons la variable `a` &amp;#x00E0; un nombre entier apr&amp;#x00E8;s l&apos;avoir initialement d&amp;#x00E9;finie comme une cha&amp;#x00EE;ne de caract&amp;#x00E8;res.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Une erreur sera g&amp;#x00E9;n&amp;#x00E9;r&amp;#x00E9;e.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Quelle est la valeur de la variable `b` apr&amp;#x00E8;s l&apos;ex&amp;#x00E9;cution du code suivant ?
+const b = &quot;hello&quot;;
+b = &quot;world&quot;;
+console.log(b);
+</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>&quot;hello&quot;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&quot;world&quot;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Une erreur sera g&amp;#x00E9;n&amp;#x00E9;r&amp;#x00E9;e.</text><feedback>Il est important de comprendre que les variables d&amp;#x00E9;clar&amp;#x00E9;es avec le mot-cl&amp;#x00E9; `const` ne peuvent pas &amp;#x00EA;tre r&amp;#x00E9;affect&amp;#x00E9;es apr&amp;#x00E8;s leur initialisation. Dans cet exemple, nous essayons de r&amp;#x00E9;affecter la variable `b`, ce qui g&amp;#x00E9;n&amp;#x00E8;re une erreur.</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record></questions>
+</data>
+
+<hotpot-config-file>
+<jquiz>
+<exercise-subtitle>Quiz</exercise-subtitle>
+<instructions></instructions>
+<guess-correct>Correct!</guess-correct>
+<guess-incorrect>Sorry! Try again.</guess-incorrect>
+<partly-incorrect>Your answer is partly wrong: </partly-incorrect>
+<enter-a-guess>Please enter a guess.</enter-a-guess>
+<next-correct-letter>Next correct letter in the answer: </next-correct-letter>
+<correct-answers>Correct answers: </correct-answers>
+<show-answer-caption>Show answer</show-answer-caption>
+<include-hint>1</include-hint>
+<include-show-answer>1</include-show-answer>
+<next-ex-url>nextpage.htm</next-ex-url>
+<send-email>0</send-email>
+<continuous-scoring>1</continuous-scoring>
+<show-correct-first-time>1</show-correct-first-time>
+<shuffle-questions>1</shuffle-questions>
+<shuffle-answers>1</shuffle-answers>
+<show-limited-questions>0</show-limited-questions>
+<questions-to-show>2</questions-to-show>
+<short-answer-tries-on-hybrid-q>2</short-answer-tries-on-hybrid-q>
+<separate-javascript-file>0</separate-javascript-file>
+<case-sensitive>0</case-sensitive>
+<include-keypad>0</include-keypad>
+</jquiz>
+
+<global>
+<your-score-is>Your score is </your-score-is>
+<correct-indicator>&amp;#x2714;</correct-indicator>
+<incorrect-indicator>&amp;#x2718;</incorrect-indicator>
+<correct-first-time>Questions answered correctly first time: </correct-first-time>
+<completed-so-far>Questions completed so far: </completed-so-far>
+<exercise-completed>You have completed the exercise.</exercise-completed>
+<keypad-characters></keypad-characters>
+<times-up>Your time is over!</times-up>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Index</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>1</include-contents>
+<include-back>1</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Arial,&quot;Comic Sans MS&quot;,Geneva,sans-serif</font-face>
+<font-size>medium</font-size>
+<page-bg-color>#C0C0C0</page-bg-color>
+<title-color>#000000</title-color>
+<ex-bg-color>#FFFFFF</ex-bg-color>
+<text-color>#000000</text-color>
+<link-color>#0000FF</link-color>
+<vlink-color>#0000CC</vlink-color>
+<nav-bar-color>#000000</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+<correct-first-time>Questions answered correctly first time: </correct-first-time>
+<check-caption>Check</check-caption>
+<ok-caption>OK</ok-caption>
+<next-q-caption>=&amp;#x003E;</next-q-caption>
+<last-q-caption>&amp;#x003C;=</last-q-caption>
+<hint-caption>Hint</hint-caption>
+<show-all-questions-caption>Show all questions</show-all-questions-caption>
+<show-one-by-one-caption>Show questions one by one</show-one-by-one-caption>
+<show-also-correct>1</show-also-correct>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+</global>
+</hotpot-config-file>
+</hotpot-jquiz-file>
