@@ -1,2 +1,0 @@
-Je viens de commencer l'apprentissage du terminal linux. J'apprends de manière autodirigée. Je veux réviser les les commandes de base.
-Maintenant, génères moi un QCM de 8 questions, de niveau moyen. Pour chaque question tu attends que je reponde avant de me donner la réponse ainsi qu'un feedBack détaillé. Enfin tu donnes le score minimum pour réuissir le QCM.
