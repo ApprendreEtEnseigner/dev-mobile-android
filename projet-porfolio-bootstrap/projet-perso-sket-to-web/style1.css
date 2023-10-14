@@ -1,0 +1,29 @@
+
+.decaler-droite{
+    transform: translateX(-50px) !important;
+    background: yellow;
+    color: white ;
+  }
+.box-parent {
+    transform: skew(2deg);
+    box-shadow: 5px 7px 17px -2px rgba(0,0,0,0.75);
+    background: #dE6989;
+}
+/* .box-child {
+    
+
+} */
+  .step {
+    border-radius: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid yellow;
+    width: 60px;
+    height: 60px;
+    transform: translateY(-42px) !important;
+    margin-left: -15px;
+    text-align: center;
+
+  }
+  
