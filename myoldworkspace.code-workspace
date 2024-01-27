@@ -1,0 +1,40 @@
+{
+  "folders": [
+    {
+      "path": ".."
+    },
+    {
+      "path": "../../i-j-w"
+    },
+    {
+      "path": "../../gitTuto"
+    },
+    {
+      "path": "../../ApprendreEtEnseigner.github.io"
+    },
+    {
+      "path": "../../coursTutoGit"
+    },
+    {
+      "path": "../../../Downloads/anki-templates-master/anki-templates-master"
+    },
+    {
+      "path": "../../../Documents/testreact/testreact"
+    },
+    {
+      "path": "../../../Downloads/spa-main/spa-main"
+    },
+    {
+      "path": "../../spa"
+    },
+    {
+      "path": "../../coursTutoGit/ultime-react"
+    },
+    {
+      "path": "../mern-project"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "spa"
+  }
+}

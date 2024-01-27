@@ -3,9 +3,59 @@
 /* header styles */
 .header-wrapper {
     background-image: url('../images/header-bg.jpg');
-    height: 300px;
+    /* height: 300px; */
 }
 
+.header {
+    /* border: 8px solid #ffea94; */
+    background-color: rgba(0, 0, 0, .78);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    padding: 35px 53px;
+}
+
+.header-svg {
+    align-items: center;
+    background-color: #ffea94;
+    border-radius: 50%;
+    display: flex;
+    height: 140px;
+    justify-content: center;
+    margin-right: 44px;
+    width: 146px;
+}
+
+.header-svg:hover {
+    background-color: #000;
+}
+
+.header-svg:hover path {
+    fill: #ffea94;
+    stroke: #ffea94;
+}
+
+.header-navigation {
+    align-self: flex-end;
+
+}
+
+
+.header-navigation ul {
+    align-items: center;
+    display: flex;
+}
+
+.header-search {
+    background: yellow;
+    height: 50px;
+
+}
+
+.header-dropdown {
+    background: #ccabab;
+    height: 60px;
+}
 .footer{
     background-image: url('../images/footer-bg.jpg');
     background-size: cover;
